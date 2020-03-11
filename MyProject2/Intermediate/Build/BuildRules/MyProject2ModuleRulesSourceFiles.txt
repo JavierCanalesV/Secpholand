@@ -1,0 +1,2 @@
+C:\Users\ivan_PC\Documents\Unreal Projects\MyProject2\Intermediate\Source\MyProject2.Build.cs
+C:\Users\ivan_PC\Documents\Unreal Projects\MyProject2\Intermediate\Source\MyProject2.Target.cs
