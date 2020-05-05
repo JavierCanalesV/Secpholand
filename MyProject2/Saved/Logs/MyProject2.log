@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿Log file open, 05/04/20 13:12:10
+=======
+﻿Log file open, 05/05/20 13:18:21
+>>>>>>> master
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -8,8 +12,13 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
 LogInit: Display: Running engine for game: MyProject2
 LogPlatformFile: Not using cached read wrapper
+<<<<<<< HEAD
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.473439
+=======
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.072547
+>>>>>>> master
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -125,13 +134,13 @@ LogInit: Build: ++UE4+Release-4.23-CL-9631420
 LogInit: Engine Version: 4.23.1-9631420+++UE4+Release-4.23
 LogInit: Compatible Engine Version: 4.23.0-8386587+++UE4+Release-4.23
 LogInit: Net CL: 8386587
-LogInit: OS: Windows 8.1 (), CPU: Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz, GPU: NVIDIA GeForce GTX 970
+LogInit: OS: Windows 10 (Release 1903) (), CPU: AMD Ryzen 5 1600 Six-Core Processor            , GPU: NVIDIA GeForce GTX 1060 3GB
 LogInit: Compiled (64-bit): Oct 18 2019 02:07:44
 LogInit: Compiled with Visual C++: 19.16.27030.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.23
 LogInit: Command Line: 
-LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.23/Engine/Binaries/Win64/
+LogInit: Base Directory: D:/Epic_Games/UE_4.23/UE_4.23/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 23
 LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
@@ -161,6 +170,7 @@ LogInit: Presizing for max 16777216 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+<<<<<<< HEAD
 [2020.05.04-11.12.11:272][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2020.05.04-11.12.11:272][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2020.05.04-11.12.11:272][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/ivan_PC/Desktop/secp/MyProject2/Saved/Config/Windows/Engine.ini]
@@ -13209,3 +13219,979 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.05.05-00.08.27:221][574]LogHttp: Warning: 000000D3F32C9940: libcurl info message cache 34 (Failed to connect to datarouter.ol.epicgames.com port 443: Timed out)
 [2020.05.05-00.08.27:221][574]LogHttp: Warning: 000000D3F32C9940: libcurl info message cache 35 (Closing connection 301)
 [2020.05.05-00.08.27:550][575]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B4CEF4FBC-4DF1-910F-C473-07AD27072D0A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.23.1-9631420%2B%2B%2BUE4%2BRelease-4.23&UserID=20082b414b8250dd72878f904fe211f7%7Cfc5c9666091548c48bec3a3c713d048f%7C530757a4-446c-4237-85ec-d9e8b2bbf3f8&AppEnvironment=datacollector-binary&UploadType=eteventstream
+=======
+[2020.05.05-11.18.21:358][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.05.05-11.18.21:358][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.05.05-11.18.21:358][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:358][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.05.05-11.18.21:358][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:358][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:358][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.05.05-11.18.21:358][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.05.05-11.18.21:359][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:359][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:361][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.05-11.18.21:361][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.05-11.18.21:362][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.05-11.18.21:363][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.05-11.18.21:363][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:363][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.05-11.18.21:363][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.05-11.18.21:363][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.05-11.18.21:363][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.05.05-11.18.21:365][  0]LogHAL: Display: Platform has ~ 8 GB [8518803456 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.05.05-11.18.21:366][  0]LogInit: Going up to parent DeviceProfile []
+[2020.05.05-11.18.21:366][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.05.05-11.18.21:366][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Scalability.ini]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.05.05-11.18.21:367][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [J:/SECP/secp/MyProject2/Saved/Config/Windows/Engine.ini]
+[2020.05.05-11.18.21:367][  0]LogInit: Computer: PCDEMARC
+[2020.05.05-11.18.21:367][  0]LogInit: User: Usuario
+[2020.05.05-11.18.21:367][  0]LogInit: CPU Page size=4096, Cores=6
+[2020.05.05-11.18.21:367][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.05.05-11.18.21:367][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2020.05.05-11.18.21:367][  0]LogMemory: Platform Memory Stats for Windows
+[2020.05.05-11.18.21:367][  0]LogMemory: Process Physical Memory: 102.20 MB used, 102.20 MB peak
+[2020.05.05-11.18.21:368][  0]LogMemory: Process Virtual Memory: 105.46 MB used, 105.46 MB peak
+[2020.05.05-11.18.21:368][  0]LogMemory: Physical Memory: 6155.68 MB used,  1968.48 MB free, 8124.16 MB total
+[2020.05.05-11.18.21:368][  0]LogMemory: Virtual Memory: 4690.70 MB used,  134213040.00 MB free, 134217728.00 MB total
+[2020.05.05-11.18.21:370][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.05.05-11.18.21:390][  0]LogInit: Overriding language with editor language configuration option (en).
+[2020.05.05-11.18.21:390][  0]LogInit: Overriding locale with editor culture configuration option ().
+[2020.05.05-11.18.21:390][  0]LogInit: Using OS detected locale (es-ES).
+[2020.05.05-11.18.21:581][  0]LogInit: Setting process to per monitor DPI aware
+[2020.05.05-11.18.21:634][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.05.05-11.18.21:634][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.05.05-11.18.21:804][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.05-11.18.21:804][  0]LogD3D11RHI: D3D11 adapters:
+[2020.05.05-11.18.21:888][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 3GB' (Feature Level 11_0)
+[2020.05.05-11.18.21:888][  0]LogD3D11RHI:       2988/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.05.05-11.18.21:890][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.05.05-11.18.21:890][  0]LogD3D11RHI:       0/0/4062 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.05.05-11.18.21:890][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.05.05-11.18.21:901][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.05.05-11.18.21:901][  0]LogD3D11RHI:     GPU DeviceId: 0x1c02 (for the marketing name, search the web for "GPU Device Id")
+[2020.05.05-11.18.21:902][  0]LogWindows: EnumDisplayDevices:
+[2020.05.05-11.18.21:902][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 3GB' (P:1 D:1)
+[2020.05.05-11.18.21:902][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:0)
+[2020.05.05-11.18.21:903][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:0)
+[2020.05.05-11.18.21:903][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 3GB' (P:0 D:0)
+[2020.05.05-11.18.21:903][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.05.05-11.18.21:903][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 3GB
+[2020.05.05-11.18.21:903][  0]LogD3D11RHI:   Driver Version: 445.75 (internal:26.21.14.4575, unified:445.75)
+[2020.05.05-11.18.21:903][  0]LogD3D11RHI:      Driver Date: 3-17-2020
+[2020.05.05-11.18.21:903][  0]LogRHI: Texture pool is 2091 MB (70% of 2988 MB)
+[2020.05.05-11.18.21:970][  0]LogD3D11RHI: Async texture creation enabled
+[2020.05.05-11.18.21:992][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.05.05-11.18.22:299][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2020.05.05-11.18.22:309][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2020.05.05-11.18.22:318][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2020.05.05-11.18.22:327][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2020.05.05-11.18.22:336][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2020.05.05-11.18.22:345][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2020.05.05-11.18.22:354][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2020.05.05-11.18.22:363][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2020.05.05-11.18.22:367][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2020.05.05-11.18.22:402][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2020.05.05-11.18.22:402][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2020.05.05-11.18.22:402][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2020.05.05-11.18.22:402][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2020.05.05-11.18.22:403][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2020.05.05-11.18.22:404][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2020.05.05-11.18.22:423][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2020.05.05-11.18.22:423][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2020.05.05-11.18.22:438][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2020.05.05-11.18.22:438][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2020.05.05-11.18.22:446][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2020.05.05-11.18.22:453][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2020.05.05-11.18.22:461][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2020.05.05-11.18.22:469][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2020.05.05-11.18.22:496][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2020.05.05-11.18.22:496][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2020.05.05-11.18.22:496][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.05.05-11.18.22:504][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.05.05-11.18.22:545][  0]LogShaderCompilers: Guid format shader working directory is 25 characters bigger than the processId version (J:/SECP/secp/MyProject2/Intermediate/Shaders/WorkingDirectory/7176/).
+[2020.05.05-11.18.22:545][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Usuario/AppData/Local/Temp/UnrealShaderWorkingDir/137FC71C4AD3A839BE75079E1C8C6E87/'.
+[2020.05.05-11.18.22:547][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.05.05-11.18.22:547][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.05.05-11.18.22:547][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.05.05-11.18.23:220][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.05.05-11.18.23:284][  0]LogDerivedDataCache: Loaded boot cache 0.06s 73MB C:/Users/Usuario/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.05.05-11.18.23:284][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Usuario/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc
+[2020.05.05-11.18.23:284][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file J:/SECP/secp/MyProject2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.05.05-11.18.23:284][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.05.05-11.18.23:285][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file J:/SECP/secp/MyProject2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.05.05-11.18.23:285][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.05.05-11.18.23:297][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.05.05-11.18.23:297][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.05.05-11.18.23:297][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.05.05-11.18.23:299][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Usuario/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.05.05-11.18.23:299][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.05.05-11.18.23:299][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.05.05-11.18.23:323][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.05.05-11.18.23:326][  0]LogSlate: Using FreeType 2.6.0
+[2020.05.05-11.18.23:327][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.05.05-11.18.23:382][  0]LogAssetRegistry: FAssetRegistry took 0.0025 seconds to start up
+[2020.05.05-11.18.23:670][  0]LogInit: Selected Device Profile: [Windows]
+[2020.05.05-11.18.23:816][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.05.05-11.18.23:816][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.05.05-11.18.23:816][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.05.05-11.18.23:816][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.05.05-11.18.23:816][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.05.05-11.18.23:825][  0]LogNetVersion: MyProject2 1.0.0, NetCL: 8386587, EngineNetVer: 11, GameNetVer: 0 (Checksum: 4230709586)
+[2020.05.05-11.18.25:670][  0]LogPackageLocalizationCache: Processed 12 localized package path(s) for 1 prioritized culture(s) in 1.467418 seconds
+[2020.05.05-11.18.25:679][  0]LogUObjectArray: 43444 objects as part of root set at end of initial load.
+[2020.05.05-11.18.25:679][  0]LogUObjectAllocator: 7548648 out of 0 bytes used by permanent object pool.
+[2020.05.05-11.18.25:680][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.05.05-11.18.26:580][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.05.05-11.18.26:584][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.05.05-11.18.26:775][  0]SourceControl: Source control is disabled
+[2020.05.05-11.18.26:775][  0]SourceControl: Source control is disabled
+[2020.05.05-11.18.26:777][  0]SourceControl: Source control is disabled
+[2020.05.05-11.18.26:777][  0]SourceControl: Source control is disabled
+[2020.05.05-11.18.27:323][  0]LogOnline: Display: STEAM: Loading Steam SDK 1.42
+[2020.05.05-11.18.27:448][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.05.05-11.18.27:630][  0]LogOcInput: OculusInput pre-init called
+[2020.05.05-11.18.27:637][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.05.05-11.18.27:637][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.05.05-11.18.28:039][  0]LogEngine: Initializing Engine...
+[2020.05.05-11.18.28:040][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.05.05-11.18.28:041][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.05.05-11.18.28:338][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.05.05-11.18.28:349][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.05.05-11.18.28:395][  0]LogInit: XAudio2 using 'Altavoces (4- Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2020.05.05-11.18.28:423][  0]LogInit: FAudioDevice initialized.
+[2020.05.05-11.18.28:423][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.05.05-11.18.28:619][  0]LogDerivedDataCache: Saved boot cache 0.20s 73MB C:/Users/Usuario/AppData/Local/UnrealEngine/4.23/DerivedDataCache/Boot.ddc.
+[2020.05.05-11.18.28:630][  0]LogInit: Texture streaming: Enabled
+[2020.05.05-11.18.28:647][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.05.05-11.18.28:647][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.05.05-11.18.28:647][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.05.05-11.18.29:200][  0]LogInit: Transaction tracking system initialized
+[2020.05.05-11.18.29:223][  0]BlueprintLog: New page: Editor Load
+[2020.05.05-11.18.29:299][  0]LocalizationService: Localization service is disabled
+[2020.05.05-11.18.29:696][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.05.05-11.18.29:696][  0]LogCook: Display: Mobile HDR setting 1
+[2020.05.05-11.18.29:868][  0]LogFileCache: Scanning file cache for directory 'J:/SECP/secp/MyProject2/Content/' took 0.02s
+[2020.05.05-11.18.29:868][  0]SourceControl: Source control is disabled
+[2020.05.05-11.18.29:868][  0]Cmd: MAP LOAD FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.05.05-11.18.29:869][  0]LogEditorServer: Warning: Can't find file 'J:/SECP/secp/MyProject2/Content/TopDownBP/Maps/TopDownExampleMap.umap'
+[2020.05.05-11.18.29:881][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.05.05-11.18.29:881][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,131ms to complete.
+[2020.05.05-11.18.29:881][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 0.013
+[2020.05.05-11.18.31:518][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.05-11.18.31:536][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.05-11.18.31:544][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.05-11.18.31:552][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.05.05-11.18.33:833][  0]LogCollectionManager: Loaded 0 collections in 0.001118 seconds
+[2020.05.05-11.18.34:084][  0]LogFileCache: Scanning file cache for directory 'J:/SECP/secp/MyProject2/Saved/Collections/' took 0.00s
+[2020.05.05-11.18.34:084][  0]LogFileCache: Scanning file cache for directory 'J:/SECP/secp/MyProject2/Content/Developers/Usuario/Collections/' took 0.00s
+[2020.05.05-11.18.34:084][  0]LogFileCache: Scanning file cache for directory 'J:/SECP/secp/MyProject2/Content/Collections/' took 0.00s
+[2020.05.05-11.18.34:084][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2020.05.05-11.18.34:111][  0]LogContentBrowser: Native class hierarchy populated in 0.0103 seconds. Added 2892 classes and 695 folders.
+[2020.05.05-11.18.34:259][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2020.05.05-11.18.36:079][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2020.05.05-11.18.36:208][  0]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.05.05-11.18.36:218][  0]LogSlate: Took 0.000260 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.05.05-11.18.36:352][  0]LogSlate: Took 0.021977 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.05.05-11.18.36:983][  0]LogRenderer: Reallocating scene render targets to support 780x360 Format 10 NumSamples 1 (Frame:1).
+[2020.05.05-11.18.37:284][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.05.05-11.18.37:284][  0]LogLoad: (Engine Initialization) Total time: 17.36 seconds
+[2020.05.05-11.18.37:284][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.05.05-11.18.37:401][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.05.05-11.18.45:808][492]LogSlate: Took 0.019954 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.05-11.18.46:694][545]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2020.05.05-11.18.53:767][967]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-11.19.01:780][444]LogSlate: Took 0.000204 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.05.05-11.19.08:164][444]LogPhysics: Warning: Failed to cook TriMesh: /Game/TopDownBP/Assets/Character/Mesh/Extra/NoBarba.NoBarba.
+[2020.05.05-11.19.08:164][444]LogPhysics: Warning: Attempt to build physics data for /Game/TopDownBP/Assets/Character/Mesh/Extra/NoBarba.NoBarba:BodySetup_0 when we are unable to.
+[2020.05.05-11.19.09:180][444]LogAIModule: Creating AISystem for world Secpholand
+[2020.05.05-11.19.09:267][444]LogAssetEditorManager: Opening Asset editor for World /Game/TopDownBP/Maps/Secpholand.Secpholand
+[2020.05.05-11.19.09:346][444]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
+[2020.05.05-11.19.09:347][444]Cmd: MAP LOAD FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Maps/Secpholand.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.05.05-11.19.09:347][444]LightingResults: New page: Lighting Build
+[2020.05.05-11.19.09:349][444]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 5 classes and 0 folders.
+[2020.05.05-11.19.09:350][444]LoadErrors: New page: Loading map: Secpholand.umap
+[2020.05.05-11.19.09:350][444]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-11.19.09:350][444]MapCheck: New page: Map Check
+[2020.05.05-11.19.09:350][444]LightingResults: New page: Lighting Build
+[2020.05.05-11.19.09:386][444]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2020.05.05-11.19.09:436][444]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem has invalid transform
+[2020.05.05-11.19.09:436][444]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2020.05.05-11.19.09:456][444]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem has invalid transform
+[2020.05.05-11.19.09:456][444]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2020.05.05-11.19.09:457][444]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem has invalid transform
+[2020.05.05-11.19.09:458][444]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2020.05.05-11.19.09:458][444]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem has invalid transform
+[2020.05.05-11.19.09:458][444]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2020.05.05-11.19.09:685][444]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.05.05-11.19.09:743][444]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2020.05.05-11.19.09:847][444]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.05.05-11.19.09:847][444]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,119ms to complete.
+[2020.05.05-11.19.09:847][444]LogFileHelpers: Loading map 'Secpholand' took 0.501
+[2020.05.05-11.19.09:950][444]LogAssetRegistry: Asset discovery search completed in 46.5685 seconds
+[2020.05.05-11.19.09:953][444]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
+[2020.05.05-11.19.15:125][730]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2020.05.05-11.19.16:398][785]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-11.19.17:345][840]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-11.19.18:901][933]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-11.19.21:047][ 64]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2020.05.05-11.19.31:043][224]LogRenderer: Reallocating scene render targets to support 1100x560 Format 10 NumSamples 1 (Frame:491).
+[2020.05.05-11.19.31:083][225]LogRenderer: Reallocating scene render targets to support 1360x724 Format 10 NumSamples 1 (Frame:493).
+[2020.05.05-11.19.31:121][226]LogRenderer: Reallocating scene render targets to support 1368x728 Format 10 NumSamples 1 (Frame:495).
+[2020.05.05-11.19.31:122][226]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.05.05-11.19.37:303][595]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={9C613834-4142-0CC9-891B-4F8272761C06}
+[2020.05.05-11.28.37:976][237]LogEditorSessionSummary: EditorSessionSummary sent report. Type=Shutdown, SessionId={E72337DD-469B-37C6-9008-95982B3EC727}
+[2020.05.05-12.45.39:657][998]LogAudio: Warning: Current Audio Device with ID {0.0.0.00000000}.{ccb729a8-da27-460d-961b-800ddab81f39} was removed. Shutting down audio device.
+[2020.05.05-12.45.39:657][998]LogInit: XAudio2 using '2D HD LG TV (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.05.05-12.45.40:295][  0]LogInit: XAudio2 using '2D HD LG TV (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.05.05-12.50.32:569][995]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.05.05-12.50.34:235][ 97]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-14.14.14:923][ 15]LogInit: XAudio2 using '2D HD LG TV (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2020.05.05-14.14.19:429][ 28]LogInit: XAudio2 using 'Altavoces (4- Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2020.05.05-15.17.29:533][505]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.31.23:037][163]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.31.51:382][789]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.31.51:815][789]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:/Users/Usuario/Desktop/Block_out/export/Park2.FBX)
+[2020.05.05-15.31.52:055][789]LogFbx: Loading FBX Scene from C:/Users/Usuario/Desktop/Block_out/export/Park2.FBX
+[2020.05.05-15.31.52:085][789]LogFbx: FBX Scene Loaded Succesfully
+[2020.05.05-15.32.00:384][789]LogSlate: Window 'FBX Import Options' being destroyed
+[2020.05.05-15.32.04:930][789]LogMaterial: Display: Missing cached shader map for material 20_-_Default, compiling. 
+[2020.05.05-15.32.06:060][789]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 22
+[2020.05.05-15.32.06:060][789]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 19
+[2020.05.05-15.32.06:060][789]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 16
+[2020.05.05-15.32.06:060][789]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2020.05.05-15.32.06:060][789]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 10
+[2020.05.05-15.32.06:069][789]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2020.05.05-15.32.06:069][789]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2020.05.05-15.32.06:069][789]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2020.05.05-15.32.06:100][789]LogMaterial: Display: Missing cached shader map for material 03_-_Default, compiling. 
+[2020.05.05-15.32.06:190][789]LogMaterial: Display: Missing cached shader map for material 09_-_Default, compiling. 
+[2020.05.05-15.32.06:291][789]LogMaterial: Display: Missing cached shader map for material 14_-_Default, compiling. 
+[2020.05.05-15.32.06:316][789]LogFbx: Display: Triangulating static mesh SM_Bld_Floor_Grass_003
+[2020.05.05-15.32.07:604][789]LogStaticMesh: Building static mesh Park2...
+[2020.05.05-15.32.08:621][789]LogStaticMesh: Built static mesh [1.05s] /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2.Park2
+[2020.05.05-15.32.09:130][789]LogStaticMesh: Warning: Park2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2020.05.05-15.32.09:131][789]LogStaticMesh: Warning: Park2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2020.05.05-15.32.09:554][789]FBXImport: Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2020.05.05-15.32.09:574][789]FBXImport: Warning: Park2 has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2020.05.05-15.32.09:574][789]FBXImport: Warning: Park2 has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4) 
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 66
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 57
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 49
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 42
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 36
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 31
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 27
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 23
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 20
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 17
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 14
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 12
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 10
+[2020.05.05-15.32.14:249][790]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 8
+[2020.05.05-15.32.14:459][791]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 6
+[2020.05.05-15.32.14:479][791]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2020.05.05-15.32.14:538][792]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 4
+[2020.05.05-15.32.14:904][798]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2020.05.05-15.32.14:972][801]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 2
+[2020.05.05-15.32.15:195][813]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 1
+[2020.05.05-15.32.15:851][849]LogSlate: Window 'Message Log' being destroyed
+[2020.05.05-15.32.15:857][849]LogSlate: Window 'Message Log' being destroyed
+[2020.05.05-15.32.24:027][303]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.32.29:713][534]LogUObjectHash: Compacting FUObjectHashTables data took  47.99ms
+[2020.05.05-15.32.31:023][534]LogSlate: Window 'Delete Assets' being destroyed
+[2020.05.05-15.32.31:037][534]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.32.31:180][534]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.32.32:265][534]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.32.32:475][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.05.05-15.32.32:546][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2020.05.05-15.32.32:579][534]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.32.33:060][558]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.32.33:430][576]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.32.34:469][576]LogSlate: Window 'Delete Assets' being destroyed
+[2020.05.05-15.32.35:995][576]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/03_-_Default.03_-_Default
+[2020.05.05-15.32.36:003][576]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.32.42:037][576]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2020.05.05-15.32.44:487][691]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.32.45:257][728]LogUObjectHash: Compacting FUObjectHashTables data took   0.89ms
+[2020.05.05-15.32.46:333][728]LogSlate: Window 'Delete Assets' being destroyed
+[2020.05.05-15.32.46:628][728]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/09_-_Default.09_-_Default
+[2020.05.05-15.32.46:635][728]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.32.47:096][728]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2020.05.05-15.32.50:207][878]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.32.50:377][886]LogAssetEditorManager: Opening Asset editor for StaticMesh /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2.Park2
+[2020.05.05-15.33.04:677][434]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.33.04:773][439]LogSlate: Window 'Park2' being destroyed
+[2020.05.05-15.33.04:791][439]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.33.05:954][442]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.33.06:082][446]LogActorFactory: Actor Factory created Park2
+[2020.05.05-15.33.07:530][523]LogActorFactory: Actor Factory created Park2
+[2020.05.05-15.33.10:657][579]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.33.12:247][669]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.33.14:795][819]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.05.05-15.33.56:388][298]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.33.58:334][414]Cmd: TRANSACTION UNDO
+[2020.05.05-15.33.58:335][414]LogEditorTransaction: Undo Clicking on Actors
+[2020.05.05-15.34.01:906][620]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (park)
+[2020.05.05-15.34.06:645][896]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga)
+[2020.05.05-15.34.07:375][940]Cmd: TRANSACTION UNDO
+[2020.05.05-15.34.07:376][940]LogEditorTransaction: Undo Clicking on Actors
+[2020.05.05-15.34.08:278][994]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga)
+[2020.05.05-15.34.08:863][ 29]Cmd: TRANSACTION UNDO
+[2020.05.05-15.34.08:864][ 29]LogEditorTransaction: Undo Clicking on Actors
+[2020.05.05-15.34.09:571][ 70]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga)
+[2020.05.05-15.34.10:804][144]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga)
+[2020.05.05-15.34.11:238][170]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Esqu¡na_Calle2)
+[2020.05.05-15.34.17:126][523]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor2)
+[2020.05.05-15.34.18:716][618]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Floor)
+[2020.05.05-15.34.19:752][680]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.05.05-15.34.27:008][113]LogEditorViewport: Clicking on Actor (LMB): Kiosco_C (Kiosco)
+[2020.05.05-15.34.29:119][240]Cmd: TRANSACTION UNDO
+[2020.05.05-15.34.29:119][240]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.34.30:390][315]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (silla_p10)
+[2020.05.05-15.34.30:908][346]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (park)
+[2020.05.05-15.34.31:543][384]Cmd: TRANSACTION UNDO
+[2020.05.05-15.34.31:543][384]LogEditorTransaction: Undo Clicking on Actors
+[2020.05.05-15.34.32:860][461]Cmd: TRANSACTION UNDO
+[2020.05.05-15.34.32:860][461]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.34.40:090][894]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (park)
+[2020.05.05-15.34.50:276][503]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (park)
+[2020.05.05-15.35.02:152][214]Cmd: TRANSACTION UNDO
+[2020.05.05-15.35.02:152][214]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.35.03:473][290]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (silla_p10)
+[2020.05.05-15.35.04:175][332]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (park)
+[2020.05.05-15.35.04:727][363]Cmd: TRANSACTION UNDO
+[2020.05.05-15.35.04:727][363]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.35.05:413][404]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Mesa_P5)
+[2020.05.05-15.35.06:466][467]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (silla_p9)
+[2020.05.05-15.35.27:423][721]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (park)
+[2020.05.05-15.35.35:318][193]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_2)
+[2020.05.05-15.36.39:174][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2020.05.05-15.36.39:265][  0]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Maps/Secpholand" FILE="J:/SECP/secp/MyProject2/Saved/Autosaves/Game/TopDownBP/Maps/Secpholand_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2020.05.05-15.36.40:122][  0]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/Secpholand_Auto1FEBBF2BE4EF603600EB6C19DBBE2B630.tmp' to 'J:/SECP/secp/MyProject2/Saved/Autosaves/Game/TopDownBP/Maps/Secpholand_Auto1.umap'
+[2020.05.05-15.36.40:900][  0]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/Secpholand' took 1.920
+[2020.05.05-15.36.40:900][  0]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.920
+[2020.05.05-15.36.40:947][  0]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2] ([1] browsable assets)...
+[2020.05.05-15.36.40:977][  0]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2.Park2]
+[2020.05.05-15.36.40:977][  0]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2]
+[2020.05.05-15.36.41:091][  0]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/Park2_Auto1EE9EFB994D705BFBC56200A5C24A09A9.tmp' to 'J:/SECP/secp/MyProject2/Saved/Autosaves/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2_Auto1.uasset'
+[2020.05.05-15.36.41:116][  0]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/20_-_Default] ([1] browsable assets)...
+[2020.05.05-15.36.41:144][  0]OBJ SavePackage:     Rendered thumbnail for [Material /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/20_-_Default.20_-_Default]
+[2020.05.05-15.36.41:144][  0]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/20_-_Default]
+[2020.05.05-15.36.41:213][  0]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/20_-_Default_Auto136A292734B56D6EF1AAE3096CB87EFC1.tmp' to 'J:/SECP/secp/MyProject2/Saved/Autosaves/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/20_-_Default_Auto1.uasset'
+[2020.05.05-15.36.41:214][  0]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/14_-_Default] ([1] browsable assets)...
+[2020.05.05-15.36.41:242][  0]OBJ SavePackage:     Rendered thumbnail for [Material /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/14_-_Default.14_-_Default]
+[2020.05.05-15.36.41:242][  0]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/14_-_Default]
+[2020.05.05-15.36.41:357][  0]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/14_-_Default_Auto12E89811744699C4BE94250B67A7AAD13.tmp' to 'J:/SECP/secp/MyProject2/Saved/Autosaves/Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/14_-_Default_Auto1.uasset'
+[2020.05.05-15.36.41:359][  0]LogFileHelpers: Auto-saving content packages took 0.453
+[2020.05.05-15.38.38:395][413]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (park)
+[2020.05.05-15.38.39:779][495]Cmd: DELETE
+[2020.05.05-15.38.39:779][495]Cmd: ACTOR DELETE
+[2020.05.05-15.38.40:107][495]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.40:154][495]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2020.05.05-15.38.40:155][495]LogEditorActor: Deleted 1 Actors (0.108 secs)
+[2020.05.05-15.38.44:199][740]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_39)
+[2020.05.05-15.38.45:620][825]Cmd: DELETE
+[2020.05.05-15.38.45:620][825]Cmd: ACTOR DELETE
+[2020.05.05-15.38.45:628][825]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.45:670][825]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.05.05-15.38.45:670][825]LogEditorActor: Deleted 1 Actors (0.050 secs)
+[2020.05.05-15.38.45:986][846]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_38)
+[2020.05.05-15.38.46:106][854]Cmd: DELETE
+[2020.05.05-15.38.46:106][854]Cmd: ACTOR DELETE
+[2020.05.05-15.38.46:114][854]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.46:146][854]LogUObjectHash: Compacting FUObjectHashTables data took   0.91ms
+[2020.05.05-15.38.46:147][854]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.38.46:591][883]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_37)
+[2020.05.05-15.38.47:210][920]Cmd: DELETE
+[2020.05.05-15.38.47:210][920]Cmd: ACTOR DELETE
+[2020.05.05-15.38.47:216][920]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.47:252][920]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.38.47:252][920]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2020.05.05-15.38.47:594][943]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2020.05.05-15.38.48:263][982]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_36)
+[2020.05.05-15.38.48:581][  1]Cmd: DELETE
+[2020.05.05-15.38.48:581][  1]Cmd: ACTOR DELETE
+[2020.05.05-15.38.48:587][  1]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.48:621][  1]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.38.48:621][  1]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.38.48:966][ 24]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_35)
+[2020.05.05-15.38.49:099][ 32]Cmd: DELETE
+[2020.05.05-15.38.49:099][ 32]Cmd: ACTOR DELETE
+[2020.05.05-15.38.49:106][ 32]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.49:142][ 32]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.38.49:142][ 32]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2020.05.05-15.38.50:505][116]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_34)
+[2020.05.05-15.38.50:672][126]Cmd: DELETE
+[2020.05.05-15.38.50:672][126]Cmd: ACTOR DELETE
+[2020.05.05-15.38.50:679][126]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.50:712][126]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.05.05-15.38.50:712][126]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.38.51:558][179]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.05.05-15.38.52:512][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_2)
+[2020.05.05-15.38.52:863][257]Cmd: DELETE
+[2020.05.05-15.38.52:863][257]Cmd: ACTOR DELETE
+[2020.05.05-15.38.52:869][257]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.52:905][257]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2020.05.05-15.38.52:906][257]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2020.05.05-15.38.53:415][290]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_6)
+[2020.05.05-15.38.53:782][312]Cmd: DELETE
+[2020.05.05-15.38.53:783][312]Cmd: ACTOR DELETE
+[2020.05.05-15.38.53:789][312]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.53:818][312]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.38.53:819][312]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2020.05.05-15.38.54:669][365]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_33)
+[2020.05.05-15.38.54:888][378]Cmd: DELETE
+[2020.05.05-15.38.54:888][378]Cmd: ACTOR DELETE
+[2020.05.05-15.38.54:894][378]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.54:927][378]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2020.05.05-15.38.54:928][378]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.38.55:389][408]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_32)
+[2020.05.05-15.38.55:691][426]Cmd: DELETE
+[2020.05.05-15.38.55:691][426]Cmd: ACTOR DELETE
+[2020.05.05-15.38.55:700][426]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.55:734][426]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.38.55:735][426]LogEditorActor: Deleted 1 Actors (0.044 secs)
+[2020.05.05-15.38.56:042][447]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_48)
+[2020.05.05-15.38.56:275][461]Cmd: DELETE
+[2020.05.05-15.38.56:275][461]Cmd: ACTOR DELETE
+[2020.05.05-15.38.56:281][461]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.56:313][461]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.38.56:314][461]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2020.05.05-15.38.56:676][485]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_49)
+[2020.05.05-15.38.56:843][495]Cmd: DELETE
+[2020.05.05-15.38.56:843][495]Cmd: ACTOR DELETE
+[2020.05.05-15.38.56:850][495]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.56:884][495]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.38.56:884][495]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.38.57:328][524]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_50)
+[2020.05.05-15.38.57:479][533]Cmd: DELETE
+[2020.05.05-15.38.57:479][533]Cmd: ACTOR DELETE
+[2020.05.05-15.38.57:485][533]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.57:517][533]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.38.57:518][533]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2020.05.05-15.38.58:265][580]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_51)
+[2020.05.05-15.38.58:399][588]Cmd: DELETE
+[2020.05.05-15.38.58:399][588]Cmd: ACTOR DELETE
+[2020.05.05-15.38.58:405][588]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.58:440][588]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.38.58:440][588]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.38.58:733][608]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_52)
+[2020.05.05-15.38.58:850][615]Cmd: DELETE
+[2020.05.05-15.38.58:850][615]Cmd: ACTOR DELETE
+[2020.05.05-15.38.58:857][615]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.58:888][615]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.05.05-15.38.58:888][615]LogEditorActor: Deleted 1 Actors (0.038 secs)
+[2020.05.05-15.38.59:335][644]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_53)
+[2020.05.05-15.38.59:452][651]Cmd: DELETE
+[2020.05.05-15.38.59:452][651]Cmd: ACTOR DELETE
+[2020.05.05-15.38.59:458][651]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.38.59:493][651]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.38.59:493][651]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.38.59:971][682]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_40)
+[2020.05.05-15.39.00:106][690]Cmd: DELETE
+[2020.05.05-15.39.00:106][690]Cmd: ACTOR DELETE
+[2020.05.05-15.39.00:112][690]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.00:146][690]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2020.05.05-15.39.00:147][690]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.39.00:607][720]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_41)
+[2020.05.05-15.39.00:741][728]Cmd: DELETE
+[2020.05.05-15.39.00:741][728]Cmd: ACTOR DELETE
+[2020.05.05-15.39.00:748][728]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.00:783][728]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2020.05.05-15.39.00:784][728]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2020.05.05-15.39.01:259][759]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_42)
+[2020.05.05-15.39.01:493][773]Cmd: DELETE
+[2020.05.05-15.39.01:493][773]Cmd: ACTOR DELETE
+[2020.05.05-15.39.01:499][773]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.01:532][773]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2020.05.05-15.39.01:533][773]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.39.01:810][792]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_43)
+[2020.05.05-15.39.01:911][798]Cmd: DELETE
+[2020.05.05-15.39.01:911][798]Cmd: ACTOR DELETE
+[2020.05.05-15.39.01:917][798]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.01:952][798]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2020.05.05-15.39.01:952][798]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.39.04:470][951]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_45)
+[2020.05.05-15.39.04:872][975]Cmd: DELETE
+[2020.05.05-15.39.04:872][975]Cmd: ACTOR DELETE
+[2020.05.05-15.39.04:879][975]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.04:913][975]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.39.04:913][975]LogEditorActor: Deleted 1 Actors (0.041 secs)
+[2020.05.05-15.39.05:307][  1]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_44)
+[2020.05.05-15.39.05:558][ 16]Cmd: DELETE
+[2020.05.05-15.39.05:558][ 16]Cmd: ACTOR DELETE
+[2020.05.05-15.39.05:565][ 16]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.05:600][ 16]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2020.05.05-15.39.05:600][ 16]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2020.05.05-15.39.09:839][272]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_47)
+[2020.05.05-15.39.10:258][297]Cmd: DELETE
+[2020.05.05-15.39.10:258][297]Cmd: ACTOR DELETE
+[2020.05.05-15.39.10:264][297]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.10:298][297]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.05.05-15.39.10:298][297]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2020.05.05-15.39.11:194][353]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (arbol_46)
+[2020.05.05-15.39.11:646][380]Cmd: DELETE
+[2020.05.05-15.39.11:646][380]Cmd: ACTOR DELETE
+[2020.05.05-15.39.11:658][380]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.39.11:690][380]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.39.11:691][380]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2020.05.05-15.39.15:358][602]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.39.20:560][913]Cmd: TRANSACTION UNDO
+[2020.05.05-15.39.20:560][913]LogEditorTransaction: Undo Scale Actors
+[2020.05.05-15.39.23:621][ 96]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Esqu¡na_Calle)
+[2020.05.05-15.39.24:140][126]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.39.26:665][278]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.39.27:468][326]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.39.29:525][449]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.39.48:859][605]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.05.05-15.39.49:428][639]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.39.55:902][ 26]Cmd: TRANSACTION UNDO
+[2020.05.05-15.39.55:902][ 26]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.39.57:391][114]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.39.57:474][119]Cmd: MODE GRID=1
+[2020.05.05-15.40.07:978][731]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle)
+[2020.05.05-15.40.13:313][ 50]Cmd: TRANSACTION UNDO
+[2020.05.05-15.40.13:313][ 50]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.40.14:014][ 91]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.40.34:872][339]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.41.01:398][924]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (Esqu¡na_Calle)
+[2020.05.05-15.41.04:393][104]Cmd: TRANSACTION UNDO
+[2020.05.05-15.41.04:393][104]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.41.05:112][146]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle)
+[2020.05.05-15.41.09:343][400]Cmd: TRANSACTION UNDO
+[2020.05.05-15.41.09:343][400]LogEditorTransaction: Undo Move Actors
+[2020.05.05-15.41.10:212][451]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.41.16:804][844]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.41.20:750][ 82]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta2)
+[2020.05.05-15.41.21:904][151]Cmd: DELETE
+[2020.05.05-15.41.21:904][151]Cmd: ACTOR DELETE
+[2020.05.05-15.41.21:917][151]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.41.21:949][151]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2020.05.05-15.41.21:949][151]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2020.05.05-15.41.22:958][214]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle4)
+[2020.05.05-15.41.36:204][  6]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Larga)
+[2020.05.05-15.41.37:040][ 56]Cmd: DELETE
+[2020.05.05-15.41.37:040][ 56]Cmd: ACTOR DELETE
+[2020.05.05-15.41.37:046][ 56]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.05.05-15.41.37:077][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2020.05.05-15.41.37:077][ 56]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2020.05.05-15.41.37:944][110]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Larga2)
+[2020.05.05-15.41.49:652][801]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle2)
+[2020.05.05-15.41.54:017][ 62]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle3)
+[2020.05.05-15.42.10:675][ 58]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Park2)
+[2020.05.05-15.42.10:947][ 58]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.42.11:294][ 81]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2020.05.05-15.42.11:340][ 81]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.42.14:556][272]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (calle_Corta)
+[2020.05.05-15.42.43:809][929]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Esqu¡na_Calle4)
+[2020.05.05-15.42.55:333][618]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2020.05.05-15.43.37:001][813]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2020.05.05-15.43.52:284][258]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.08:240][613]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.18:928][242]LogAssetEditorManager: Opening Asset editor for MaterialInstanceConstant /Game/TopDownBP/Assets/Materiales/tierraParque.tierraParque
+[2020.05.05-15.44.28:628][702]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.44.29:890][771]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Assets/Materiales/tierraParque" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/tierraParque.uasset" SILENT=true
+[2020.05.05-15.44.29:949][771]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2020.05.05-15.44.30:113][771]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.05.05-15.44.30:471][771]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
+[2020.05.05-15.44.30:471][771]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 1
+[2020.05.05-15.44.30:484][771]TextureStreamingBuild: Display: Compiling optional shaders took 0.535 seconds.
+[2020.05.05-15.44.30:541][771]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2020.05.05-15.44.30:562][771]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/tierraParqueF1943EE145D6FA5743666DB228480257.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/tierraParque.uasset'
+[2020.05.05-15.44.32:695][897]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.32:778][901]LogSlate: Window 'tierraParque' being destroyed
+[2020.05.05-15.44.32:907][901]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.44.34:131][975]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.41:206][396]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.46:985][711]LogAssetEditorManager: Opening Asset editor for MaterialInstanceConstant /Game/TopDownBP/Assets/Materiales/fuente.fuente
+[2020.05.05-15.44.54:552][ 87]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.44.55:645][148]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Assets/Materiales/fuente" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/fuente.uasset" SILENT=true
+[2020.05.05-15.44.56:120][148]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2020.05.05-15.44.56:128][148]TextureStreamingBuild: Display: Compiling optional shaders took 0.008 seconds.
+[2020.05.05-15.44.56:159][148]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.44.56:179][148]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/fuente9A41C035461B0BAF24969C9FB6510511.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/fuente.uasset'
+[2020.05.05-15.44.57:632][236]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.44.57:696][240]LogSlate: Window 'fuente' being destroyed
+[2020.05.05-15.44.57:839][240]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.44.58:885][303]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.45.02:282][502]LogSlate: FSceneViewport::OnFocusLost() reason 5
+[2020.05.05-15.45.17:801][421]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.45.20:702][576]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.45.32:067][139]LogAssetEditorManager: Opening Asset editor for MaterialInstanceConstant /Game/TopDownBP/Assets/Materiales/GrisClaro.GrisClaro
+[2020.05.05-15.45.38:155][406]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.45.39:333][471]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Assets/Materiales/GrisClaro" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/GrisClaro.uasset" SILENT=true
+[2020.05.05-15.45.39:406][471]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2020.05.05-15.45.39:415][471]TextureStreamingBuild: Display: Compiling optional shaders took 0.008 seconds.
+[2020.05.05-15.45.39:451][471]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2020.05.05-15.45.40:477][471]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/GrisClaroFFEE02B540C006CB7719B2BE57271F4D.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/GrisClaro.uasset'
+[2020.05.05-15.45.42:388][585]LogSlate: Window 'GrisClaro' being destroyed
+[2020.05.05-15.45.42:447][585]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.45.50:054][ 19]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.45.50:207][ 26]LogAssetEditorManager: Opening Asset editor for MaterialInstanceConstant /Game/TopDownBP/Assets/Materiales/GrisClaro.GrisClaro
+[2020.05.05-15.45.55:300][266]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.45.56:426][327]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Assets/Materiales/GrisClaro" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/GrisClaro.uasset" SILENT=true
+[2020.05.05-15.45.57:782][327]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2020.05.05-15.45.57:790][327]TextureStreamingBuild: Display: Compiling optional shaders took 0.008 seconds.
+[2020.05.05-15.45.57:821][327]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2020.05.05-15.45.57:871][327]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/GrisClaro953032414FF410F727C954AF36562540.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/GrisClaro.uasset'
+[2020.05.05-15.46.01:638][550]LogSlate: Window 'GrisClaro' being destroyed
+[2020.05.05-15.46.01:697][550]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.46.26:291][  2]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Mesa_P5)
+[2020.05.05-15.46.28:783][150]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.46.28:959][159]LogAssetEditorManager: Opening Asset editor for Material /Game/TopDownBP/Assets/Edificios/Parque/Props_Parque/sillas/19_-_Default.19_-_Default
+[2020.05.05-15.46.28:985][159]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.46.29:535][159]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 30
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 29
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 28
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 27
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 26
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 25
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 24
+[2020.05.05-15.46.29:599][159]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 23
+[2020.05.05-15.46.29:603][159]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.46.29:633][159]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2020.05.05-15.46.29:836][159]LogSlate: Took 0.033711 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.05.05-15.46.30:016][159]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 34
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 33
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 32
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 31
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 30
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 29
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 28
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 27
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 26
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 25
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 24
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 23
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 22
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 21
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 20
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 19
+[2020.05.05-15.46.30:733][159]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 18
+[2020.05.05-15.46.31:126][162]LogSlate: Took 0.040777 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.05.05-15.46.31:174][163]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 17
+[2020.05.05-15.46.31:243][164]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 16
+[2020.05.05-15.46.31:304][166]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 15
+[2020.05.05-15.46.31:389][169]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 14
+[2020.05.05-15.46.31:412][170]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 13
+[2020.05.05-15.46.31:433][171]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 12
+[2020.05.05-15.46.31:433][171]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 11
+[2020.05.05-15.46.31:480][173]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 10
+[2020.05.05-15.46.31:822][185]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2020.05.05-15.46.32:043][193]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 8
+[2020.05.05-15.46.32:044][193]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2020.05.05-15.46.32:076][194]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 6
+[2020.05.05-15.46.32:208][199]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 5
+[2020.05.05-15.46.32:357][205]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 4
+[2020.05.05-15.46.32:385][206]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 3
+[2020.05.05-15.46.32:385][206]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 2
+[2020.05.05-15.46.32:523][211]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 1
+[2020.05.05-15.46.32:868][223]MaterialEditorStats: Base pass shader: 119 instructions
+[2020.05.05-15.46.32:868][223]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2020.05.05-15.46.32:882][223]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2020.05.05-15.46.32:882][223]MaterialEditorStats: Base pass vertex shader: 40 instructions
+[2020.05.05-15.46.32:882][223]MaterialEditorStats: Texture samplers: 3/16
+[2020.05.05-15.46.38:886][545]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.46.40:091][615]LogSlate: Window '19_-_Default' being destroyed
+[2020.05.05-15.46.49:415][160]LogAssetEditorManager: Opening Asset editor for MaterialInstanceConstant /Game/TopDownBP/Assets/Materiales/madera.madera
+[2020.05.05-15.46.55:326][540]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.47.02:137][947]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 30
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 29
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 28
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 27
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 26
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 25
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 24
+[2020.05.05-15.47.02:166][947]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 23
+[2020.05.05-15.47.02:196][947]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2020.05.05-15.47.02:231][947]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2020.05.05-15.47.02:255][947]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.47.02:296][947]LogMaterial: Display: Missing cached shader map for material FMatExpressionPreview MaterialExpressionVectorParameter_0, compiling. 
+[2020.05.05-15.47.02:312][947]LogMaterial: Display: Missing cached shader map for material 19_-_Default, compiling. 
+[2020.05.05-15.47.02:628][964]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 34
+[2020.05.05-15.47.02:716][969]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 33
+[2020.05.05-15.47.02:736][970]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 32
+[2020.05.05-15.47.02:761][972]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 31
+[2020.05.05-15.47.02:779][973]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 30
+[2020.05.05-15.47.02:779][973]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 29
+[2020.05.05-15.47.02:832][976]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 28
+[2020.05.05-15.47.02:948][983]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 27
+[2020.05.05-15.47.03:137][994]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.47.03:177][995]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 26
+[2020.05.05-15.47.03:199][998]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 25
+[2020.05.05-15.47.03:216][  0]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 24
+[2020.05.05-15.47.03:216][  0]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 23
+[2020.05.05-15.47.03:243][  1]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 22
+[2020.05.05-15.47.03:243][  1]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 21
+[2020.05.05-15.47.03:276][  3]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 20
+[2020.05.05-15.47.03:327][  4]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 19
+[2020.05.05-15.47.03:401][ 10]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 18
+[2020.05.05-15.47.03:541][ 18]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 17
+[2020.05.05-15.47.03:588][ 20]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 16
+[2020.05.05-15.47.03:588][ 20]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 15
+[2020.05.05-15.47.03:620][ 22]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 14
+[2020.05.05-15.47.03:910][ 39]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 13
+[2020.05.05-15.47.04:137][ 63]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 12
+[2020.05.05-15.47.04:196][ 70]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 11
+[2020.05.05-15.47.04:270][ 78]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 10
+[2020.05.05-15.47.04:296][ 80]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 9
+[2020.05.05-15.47.04:460][ 93]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 8
+[2020.05.05-15.47.04:479][ 93]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 7
+[2020.05.05-15.47.04:479][ 93]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 6
+[2020.05.05-15.47.04:479][ 93]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2020.05.05-15.47.04:770][114]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 4
+[2020.05.05-15.47.04:904][126]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2020.05.05-15.47.05:040][133]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 2
+[2020.05.05-15.47.05:106][137]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 1
+[2020.05.05-15.47.05:562][169]MaterialEditorStats: Base pass shader: 119 instructions
+[2020.05.05-15.47.05:562][169]MaterialEditorStats: Base pass shader with Surface Lightmap: 146 instructions
+[2020.05.05-15.47.05:562][169]MaterialEditorStats: Base pass shader with Volumetric Lightmap: 193 instructions
+[2020.05.05-15.47.05:562][169]MaterialEditorStats: Base pass vertex shader: 40 instructions
+[2020.05.05-15.47.05:562][169]MaterialEditorStats: Texture samplers: 3/16
+[2020.05.05-15.47.09:818][596]LogSlate: Window 'Color Picker' being destroyed
+[2020.05.05-15.47.14:194][857]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.18:208][ 93]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.20:282][211]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.24:765][478]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.29:933][787]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.35:285][106]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.37:760][254]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.39:131][336]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.47.46:490][777]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (silla_p9)
+[2020.05.05-15.47.47:684][846]LogEditorViewport: Clicking on Actor (CTRL LMB): StaticMeshActor (silla_p10)
+[2020.05.05-15.47.53:448][191]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Park2)
+[2020.05.05-15.48.00:139][588]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.48.24:473][ 43]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_19)
+[2020.05.05-15.48.42:454][112]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_20)
+[2020.05.05-15.48.53:710][783]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_23)
+[2020.05.05-15.49.00:568][192]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_18)
+[2020.05.05-15.49.07:308][592]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_21)
+[2020.05.05-15.49.09:717][734]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Generic_Small_Rocks_22)
+[2020.05.05-15.49.19:200][298]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2020.05.05-15.49.45:409][853]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2020.05.05-15.49.45:544][858]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2020.05.05-15.49.46:506][858]LogSlate: Window 'Save Content' being destroyed
+[2020.05.05-15.49.46:557][858]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/14_-_Default7B7B9DB445469430E1B91F90AE2E3B19.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/14_-_Default.uasset'
+[2020.05.05-15.49.46:633][858]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/20_-_Default908455C64943E095557C9EB67CF9AD61.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/20_-_Default.uasset'
+[2020.05.05-15.49.46:738][858]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/Park2368500B947BA76B0D25F7F87600F0C81.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Edificios/Parque/Props_Parque/Parque/Park2.uasset'
+[2020.05.05-15.49.46:786][858]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Assets/Materiales/madera" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/madera.uasset" SILENT=true
+[2020.05.05-15.49.46:872][858]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2020.05.05-15.49.46:880][858]TextureStreamingBuild: Display: Compiling optional shaders took 0.008 seconds.
+[2020.05.05-15.49.46:910][858]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.49.46:929][858]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/madera81FD851B4C67C1D6E8DCBDA13AD791F0.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Assets/Materiales/madera.uasset'
+[2020.05.05-15.49.46:949][858]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Maps/Secpholand" FILE="J:/SECP/secp/MyProject2/Content/TopDownBP/Maps/Secpholand.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2020.05.05-15.49.47:046][858]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2020.05.05-15.49.47:497][858]LogSavePackage: Moving 'J:/SECP/secp/MyProject2/Saved/SecpholandC28DB919483C848238E9D5A221DA42A5.tmp' to 'J:/SECP/secp/MyProject2/Content/TopDownBP/Maps/Secpholand.umap'
+[2020.05.05-15.49.47:779][858]LogFileHelpers: Saving map 'Secpholand' took 0.831
+[2020.05.05-15.49.51:805][944]LogSlate: Window 'Message' being destroyed
+[2020.05.05-15.49.51:850][944]LogUObjectHash: Compacting FUObjectHashTables data took   2.57ms
+[2020.05.05-15.49.52:576][944]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.49.52:634][944]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.49.52:641][944]LogSlate: Window 'MyProject2 - Unreal Editor' being destroyed
+[2020.05.05-15.49.54:337][945]Cmd: QUIT_EDITOR
+[2020.05.05-15.49.55:985][945]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.05.05-15.49.57:312][945]LogExit: Preparing to exit.
+[2020.05.05-15.49.59:024][945]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2020.05.05-15.49.59:024][945]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2020.05.05-15.49.59:024][945]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.05.05-15.49.59:024][945]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+>>>>>>> master
