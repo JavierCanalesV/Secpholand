@@ -11,16 +11,20 @@
 		},
 		{
 			"Name": "AdvancedSteamSessions",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "AdvancedSessions",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "TcpSocketPlugin",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/462c2952e71c4548ae324cb624c74aa6"
 		}
+	],
+	"TargetPlatforms": [
+		"HTML5",
+		"WindowsNoEditor"
 	]
 }

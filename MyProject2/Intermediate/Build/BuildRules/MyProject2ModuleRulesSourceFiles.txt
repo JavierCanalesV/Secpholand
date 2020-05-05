@@ -1,0 +1,4 @@
+C:\Users\guill\Desktop\secp\MyProject2\Plugins\AdvancedSessions\AdvancedSessions\Source\AdvancedSessions\AdvancedSessions.Build.cs
+C:\Users\guill\Desktop\secp\MyProject2\Plugins\AdvancedSessions\AdvancedSteamSessions\Source\AdvancedSteamSessions\AdvancedSteamSessions.Build.cs
+C:\Users\guill\Desktop\secp\MyProject2\Intermediate\Source\MyProject2.Build.cs
+C:\Users\guill\Desktop\secp\MyProject2\Intermediate\Source\MyProject2.Target.cs
