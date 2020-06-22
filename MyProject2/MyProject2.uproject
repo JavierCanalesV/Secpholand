@@ -1,8 +1,15 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.23",
+	"EngineAssociation": "{2EB0425D-4C24-8133-CD43-A6B8EDFF0D18}",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "MyProject2",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "UINavigation",
@@ -24,6 +31,10 @@
 		},
 		{
 			"Name": "Synthesis",
+			"Enabled": true
+		},
+		{
+			"Name": "WhatsMyPublicIP",
 			"Enabled": true
 		}
 	],
