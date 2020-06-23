@@ -7,7 +7,10 @@
 		{
 			"Name": "MyProject2",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -31,10 +34,6 @@
 		},
 		{
 			"Name": "Synthesis",
-			"Enabled": true
-		},
-		{
-			"Name": "WhatsMyPublicIP",
 			"Enabled": true
 		}
 	],
