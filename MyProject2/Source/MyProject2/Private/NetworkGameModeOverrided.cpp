@@ -2,6 +2,7 @@
 
 
 #include "NetworkGameModeOverrided.h"
+#include "Engine/World.h"
 
 void ANetworkGameModeOverrided::PreLogin(const FString& Options, const FString& Address, const FUniqueNetIdRepl& UniqueId, FString& ErrorMessage)
 {
@@ -18,4 +19,9 @@ FString ANetworkGameModeOverrided::GetPlayerIP() const
 FString ANetworkGameModeOverrided::GetPlayerUniqueID() const
 {
 	return playerUniqueID;
+}
+
+FString ANetworkGameModeOverrided::GetPlayerPort() const
+{
+	return GetWorld()->GetAddressURL();
 }
