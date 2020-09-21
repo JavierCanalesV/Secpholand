@@ -16,5 +16,9 @@ class MYPROJECT2_API AClientSideControllerOverride : public APlayerController
 public:
 	UFUNCTION(BlueprintCallable, Category = ClientInfo)
 		FString GetPlayerPort() const;
+
+public:
+	UFUNCTION(BlueprintCallable, Category = ClientInfo)
+		void ClientTravelOverrided(const FString & URL, enum ETravelType TravelType, bool bSeamless, FGuid MapPackageGuid);
 	
 };
