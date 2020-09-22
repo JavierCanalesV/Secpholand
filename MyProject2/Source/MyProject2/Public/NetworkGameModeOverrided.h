@@ -24,6 +24,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = ClientInfo)
 	FString GetPlayerUniqueID() const;
 
+	UFUNCTION(BlueprintCallable, Category = ClientInfo)
+		FString GetPlayerPort() const;
+
 private:
 
 	FString playerAddress;
