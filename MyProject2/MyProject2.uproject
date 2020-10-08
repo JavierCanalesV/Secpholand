@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{6F6B249E-45FD-C4B9-F47A-E58379B97F01}",
+	"EngineAssociation": "{2EB0425D-4C24-8133-CD43-A6B8EDFF0D18}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -39,6 +39,16 @@
 		{
 			"Name": "WebBrowserWidget",
 			"Enabled": true
+		},
+		{
+			"Name": "EasyVoiceChat",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/b204a1777cb34ff88bcc32bd9296c412"
+		},
+		{
+			"Name": "EmailPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/88f228c5ad9d4288b6426754c0b3f3d1"
 		}
 	],
 	"TargetPlatforms": [
