@@ -39,6 +39,16 @@
 		{
 			"Name": "WebBrowserWidget",
 			"Enabled": true
+		},
+		{
+			"Name": "EasyVoiceChat",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/b204a1777cb34ff88bcc32bd9296c412"
+		},
+		{
+			"Name": "EmailPlugin",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/88f228c5ad9d4288b6426754c0b3f3d1"
 		}
 	],
 	"TargetPlatforms": [
