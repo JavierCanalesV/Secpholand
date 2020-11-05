@@ -1,6 +1,10 @@
 {
 	"FileVersion": 3,
+<<<<<<< HEAD
 	"EngineAssociation": "{35A629F2-4BD5-984D-4291-ADBAF4B6B897}",
+=======
+	"EngineAssociation": "{6F6B249E-45FD-C4B9-F47A-E58379B97F01}",
+>>>>>>> C++Project
 	"Category": "",
 	"Description": "",
 	"Modules": [
