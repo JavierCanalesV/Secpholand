@@ -49,6 +49,11 @@
 			"Name": "EmailPlugin",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/88f228c5ad9d4288b6426754c0b3f3d1"
+		},
+		{
+			"Name": "DirectExcel",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/59f434efddeb4c93b27c8e05719664f1"
 		}
 	],
 	"TargetPlatforms": [
