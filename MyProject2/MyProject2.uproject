@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{08F14509-45BC-8FB6-6B61-18977F78E6E7}",
+	"EngineAssociation": "{35A629F2-4BD5-984D-4291-ADBAF4B6B897}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -54,6 +54,11 @@
 			"Name": "DirectExcel",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/59f434efddeb4c93b27c8e05719664f1"
+		},
+		{
+			"Name": "NetShield",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e5bfbbb0e56b45cdaa19c35a224e0483"
 		}
 	],
 	"TargetPlatforms": [
