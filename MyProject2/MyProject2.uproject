@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{08F14509-45BC-8FB6-6B61-18977F78E6E7}",
+	"EngineAssociation": "{35A629F2-4BD5-984D-4291-ADBAF4B6B897}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -63,6 +63,7 @@
 	],
 	"TargetPlatforms": [
 		"HTML5",
-		"WindowsNoEditor"
+		"WindowsNoEditor",
+		"MacNoEditor"
 	]
 }
