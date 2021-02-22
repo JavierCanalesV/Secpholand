@@ -59,10 +59,15 @@
 			"Name": "NetShield",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e5bfbbb0e56b45cdaa19c35a224e0483"
+		},
+		{
+			"Name": "SoundUtilities",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
 		"HTML5",
-		"WindowsNoEditor"
+		"WindowsNoEditor",
+		"MacNoEditor"
 	]
 }
