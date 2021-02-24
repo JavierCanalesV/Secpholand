@@ -9,7 +9,7 @@
  * Latent methods
  */
 
-void UEmailFL::SendEmail(UObject* WorldContextObject, FEmailDetails EmailDetails, EEmailType EmailService, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FLatentActionInfo LatentInfo)
+void UEmailFL::SendEmail(UObject* WorldContextObject, FEmailDetails EmailDetails, EEmailType EmailService, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, FLatentActionInfo LatentInfo)
 {
 	//Register call to latent function
 	if (UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull))
@@ -17,18 +17,20 @@ void UEmailFL::SendEmail(UObject* WorldContextObject, FEmailDetails EmailDetails
 		FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
 		if (LatentActionManager.FindExistingAction<FSendEmail>(LatentInfo.CallbackTarget, LatentInfo.UUID) == NULL)
 		{
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails , EmailService, CharacterSet, SecurityType, OutResult, LatentInfo));
+			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails , EmailService, CharacterSet, SecurityType, OutResult, OutError, LatentInfo));
 		}
 	}
 }
 
-void UEmailFL::SendEmailV2(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FLatentActionInfo LatentInfo)
+void UEmailFL::SendEmailV2(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, FLatentActionInfo LatentInfo)
 {
 	FEmailDetails EmailDetails;
 	EmailDetails.SenderEmail = EmailDetailsObject->SenderEmail;
 	EmailDetails.Password = EmailDetailsObject->Password;
 	EmailDetails.SenderName = EmailDetailsObject->SenderName;
 	EmailDetails.ReceiverEmail = EmailDetailsObject->ReceiverEmail;
+	EmailDetails.CC = EmailDetailsObject->CC;
+	EmailDetails.BCC = EmailDetailsObject->BCC;
 	EmailDetails.Subject = EmailDetailsObject->Subject;
 	EmailDetails.Message = EmailDetailsObject->Message;
 	EmailDetails.Attachments = EmailDetailsObject->Attachments;
@@ -40,12 +42,12 @@ void UEmailFL::SendEmailV2(UObject* WorldContextObject, UEmailDetailsObject* Ema
 		FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
 		if (LatentActionManager.FindExistingAction<FSendEmail>(LatentInfo.CallbackTarget, LatentInfo.UUID) == NULL)
 		{
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, EmailDetailsObject->EmailService, CharacterSet, SecurityType, OutResult, LatentInfo));
+			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, EmailDetailsObject->EmailService, CharacterSet, SecurityType, OutResult, OutError, LatentInfo));
 		}
 	}
 }
 
-void UEmailFL::SendEmailV3(UObject* WorldContextObject, FEmailDetails EmailDetails, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, struct FLatentActionInfo LatentInfo)
+void UEmailFL::SendEmailV3(UObject* WorldContextObject, FEmailDetails EmailDetails, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, struct FLatentActionInfo LatentInfo)
 {
 	//Register call to latent function
 	if (UWorld* World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull))
@@ -53,18 +55,20 @@ void UEmailFL::SendEmailV3(UObject* WorldContextObject, FEmailDetails EmailDetai
 		FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
 		if (LatentActionManager.FindExistingAction<FSendEmail>(LatentInfo.CallbackTarget, LatentInfo.UUID) == NULL)
 		{
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, Username, ServerName, Port, CharacterSet, SecurityType, OutResult, LatentInfo));
+			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, Username, ServerName, Port, CharacterSet, SecurityType, OutResult, OutError, LatentInfo));
 		}
 	}
 }
 
-void UEmailFL::SendEmailV4(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FLatentActionInfo LatentInfo)
+void UEmailFL::SendEmailV4(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, FLatentActionInfo LatentInfo)
 {
 	FEmailDetails EmailDetails;
 	EmailDetails.SenderEmail = EmailDetailsObject->SenderEmail;
 	EmailDetails.Password = EmailDetailsObject->Password;
 	EmailDetails.SenderName = EmailDetailsObject->SenderName;
 	EmailDetails.ReceiverEmail = EmailDetailsObject->ReceiverEmail;
+	EmailDetails.CC = EmailDetailsObject->CC;
+	EmailDetails.BCC = EmailDetailsObject->BCC;
 	EmailDetails.Subject = EmailDetailsObject->Subject;
 	EmailDetails.Message = EmailDetailsObject->Message;
 	EmailDetails.Attachments = EmailDetailsObject->Attachments;
@@ -76,7 +80,7 @@ void UEmailFL::SendEmailV4(UObject* WorldContextObject, UEmailDetailsObject* Ema
 		FLatentActionManager& LatentActionManager = World->GetLatentActionManager();
 		if (LatentActionManager.FindExistingAction<FSendEmail>(LatentInfo.CallbackTarget, LatentInfo.UUID) == NULL)
 		{
-			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, Username, ServerName, Port, CharacterSet, SecurityType, OutResult, LatentInfo));
+			LatentActionManager.AddNewAction(LatentInfo.CallbackTarget, LatentInfo.UUID, new FSendEmail(EmailDetails, Username, ServerName, Port, CharacterSet, SecurityType, OutResult, OutError, LatentInfo));
 		}
 	}
 }
@@ -103,7 +107,7 @@ void UEmailFL::SaveCaptureComponent2D(UObject* WorldContextObject, class USceneC
  * Utilities
  */
 
-UEmailDetailsObject* UEmailFL::MakeEmailDetailsFromAsset(FName SelectedUser, FString SelectedUserInternal, UEmailDetailsAsset* EmailDetailsAsset, FString ReceiverEmail, FString Subject, FString Message, TArray<FString> Attachments, bool bUsesHTML)
+UEmailDetailsObject* UEmailFL::MakeEmailDetailsFromAsset(FName SelectedUser, FString SelectedUserInternal, UEmailDetailsAsset* EmailDetailsAsset, FString ReceiverEmail, TArray<FString> CC, TArray<FString> BCC, FString Subject, FString Message, TArray<FString> Attachments, bool bUsesHTML)
 {
 	FUserDetails Details = FUserDetails();
 	for (int32 i = 0; i < EmailDetailsAsset->UserDetailsList.Num(); i++)
@@ -115,7 +119,7 @@ UEmailDetailsObject* UEmailFL::MakeEmailDetailsFromAsset(FName SelectedUser, FSt
 	}
 
 	UEmailDetailsObject* DetailObject = NewObject<UEmailDetailsObject>();
-	DetailObject->Init(Details.Email, Details.Password, Details.SenderName, ReceiverEmail, Subject, Message, Attachments, Details.EmailService, bUsesHTML);
+	DetailObject->Init(Details.Email, Details.Password, Details.SenderName, ReceiverEmail, CC, BCC, Subject, Message, Attachments, Details.EmailService, bUsesHTML);
 	return DetailObject;
 }
 
@@ -130,10 +134,10 @@ TArray<FName> UEmailFL::GetUsersFromEmailDetailsAsset(UEmailDetailsAsset* EmailD
 	return Users;
 }
 
-UEmailDetailsObject* UEmailFL::MakeEmailDetails(FString SenderEmail, FString Password, FString SenderName, FString ReceiverEmail, FString Subject, FString Message, TArray<FString> Attachments, EEmailType EmailService, bool bUsesHTML)
+UEmailDetailsObject* UEmailFL::MakeEmailDetails(FString SenderEmail, FString Password, FString SenderName, FString ReceiverEmail, TArray<FString> CC, TArray<FString> BCC, FString Subject, FString Message, TArray<FString> Attachments, EEmailType EmailService, bool bUsesHTML)
 {
 	UEmailDetailsObject* EmailDetailsObject = NewObject<UEmailDetailsObject>();
-	EmailDetailsObject->Init(SenderEmail, Password, SenderName, ReceiverEmail, Subject, Message, Attachments, EmailService, bUsesHTML);
+	EmailDetailsObject->Init(SenderEmail, Password, SenderName, ReceiverEmail, CC, BCC, Subject, Message, Attachments, EmailService, bUsesHTML);
 	return EmailDetailsObject;
 }
 

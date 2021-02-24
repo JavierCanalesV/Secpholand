@@ -87,6 +87,10 @@ struct FEmailDetails
 	UPROPERTY(BlueprintReadWrite, Category = "Email Plugin")
 	FString ReceiverEmail;
 	UPROPERTY(BlueprintReadWrite, Category = "Email Plugin")
+	TArray<FString> CC;
+	UPROPERTY(BlueprintReadWrite, Category = "Email Plugin")
+	TArray<FString> BCC;
+	UPROPERTY(BlueprintReadWrite, Category = "Email Plugin")
 	FString Subject;
 	UPROPERTY(BlueprintReadWrite, Category = "Email Plugin")
 	FString Message;
@@ -120,7 +124,7 @@ public:
 	//Future used to check if Async function result it's ready
 	TFuture<bool> Result;
 
-	FSendEmail(FEmailDetails InEmailDetails, EEmailType InEmailService, ECharSet InCharacterSet, ESecurityType InSecurityType, EEmailResult& InEmailResult, const FLatentActionInfo& LatentInfo)
+	FSendEmail(FEmailDetails InEmailDetails, EEmailType InEmailService, ECharSet InCharacterSet, ESecurityType InSecurityType, EEmailResult& InEmailResult, FString& InError, const FLatentActionInfo& LatentInfo)
 		: ExecutionFunction( LatentInfo.ExecutionFunction )
 		, OutputLink( LatentInfo.Linkage )
 		, CallbackTarget( LatentInfo.CallbackTarget )
@@ -129,13 +133,14 @@ public:
 		, CharacterSet(InCharacterSet)
 		, SecurityType(InSecurityType)
 		, EmailResult ( InEmailResult )
+		, OutError (InError)
 		, RunFirstTime( false )
 	{
 		ParseStringIntoLines(EmailDetails.Message);
 		bCustomServer = false;
 	}
 
-	FSendEmail(FEmailDetails InEmailDetails, FString Username, FString InServer, int32 InPort, ECharSet InCharacterSet, ESecurityType InSecurityType, EEmailResult& InEmailResult, const FLatentActionInfo& LatentInfo)
+	FSendEmail(FEmailDetails InEmailDetails, FString Username, FString InServer, int32 InPort, ECharSet InCharacterSet, ESecurityType InSecurityType, EEmailResult& InEmailResult, FString& InError, const FLatentActionInfo& LatentInfo)
 		: ExecutionFunction(LatentInfo.ExecutionFunction)
 		, OutputLink(LatentInfo.Linkage)
 		, CallbackTarget(LatentInfo.CallbackTarget)
@@ -143,6 +148,7 @@ public:
 		, CharacterSet(InCharacterSet)
 		, SecurityType(InSecurityType)
 		, EmailResult(InEmailResult)
+		, OutError (InError)
 		, RunFirstTime(false)
 		, Username(Username)
 		, Server(InServer)
@@ -201,6 +207,14 @@ public:
 					mail.SetSenderMail(TCHAR_TO_UTF8(*EmailDetails.SenderEmail));
 					mail.SetSubject(TCHAR_TO_UTF8(*EmailDetails.Subject));
 					mail.AddRecipient(TCHAR_TO_UTF8(*EmailDetails.ReceiverEmail));
+					for (FString CC : EmailDetails.CC)
+					{
+						if(!CC.IsEmpty()) mail.AddCCRecipient(TCHAR_TO_UTF8(*CC));
+					}
+					for (FString BCC : EmailDetails.BCC)
+					{
+						if(!BCC.IsEmpty())mail.AddBCCRecipient(TCHAR_TO_UTF8(*BCC));
+					}
 					mail.SetXPriority(XPRIORITY_NORMAL);
 					
 					switch (CharacterSet)
@@ -245,6 +259,7 @@ public:
 				catch (ECSmtp e)
 				{
 					UE_LOG(LogEmailPlugin, Warning, TEXT("%s"), *FString(e.GetErrorText().c_str()));
+					OutError = FString(e.GetErrorText().c_str());
 					return false;
 				}
 
@@ -316,6 +331,7 @@ private:
 	ECharSet CharacterSet;
 	ESecurityType SecurityType;
 	EEmailResult& EmailResult;
+	FString& OutError;
 	bool RunFirstTime;
 	FString Username;
 	FString Server;

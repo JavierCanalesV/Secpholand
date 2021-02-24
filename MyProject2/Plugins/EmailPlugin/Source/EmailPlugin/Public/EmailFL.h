@@ -38,7 +38,7 @@ public:
 	 *@param OutResult This is the email plugin result that you can check once the latent function is done. Was it successful or failed?
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Email Library | Send", meta = (Latent, WorldContext = "WorldContextObject", LatentInfo = "LatentInfo"))
-	static void SendEmail(UObject* WorldContextObject, FEmailDetails EmailDetails, EEmailType EmailService, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, struct FLatentActionInfo LatentInfo);
+	static void SendEmail(UObject* WorldContextObject, FEmailDetails EmailDetails, EEmailType EmailService, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, struct FLatentActionInfo LatentInfo);
 
 	/**
 	 *Send email using an email details object
@@ -46,7 +46,7 @@ public:
 	 *@param OutResult This is the email plugin result that you can check once the latent function is done. Was it successful or failed?
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Email Library | Send", meta = (Latent, WorldContext = "WorldContextObject", LatentInfo = "LatentInfo", DisplayName = "Send Email (Email Details Object)"))
-	static void SendEmailV2(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, struct FLatentActionInfo LatentInfo);
+	static void SendEmailV2(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, struct FLatentActionInfo LatentInfo);
 
 	/**
 	 *Send email and specify a custom SMTP server
@@ -57,7 +57,7 @@ public:
 	 *@param OutResult This is the email plugin result that you can check once the latent function is done. Was it successful or failed?
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Email Library | Send", meta = (Latent, WorldContext = "WorldContextObject", LatentInfo = "LatentInfo", DisplayName = "Send Email (Custom SMTP Server)"))
-	static void SendEmailV3(UObject* WorldContextObject, FEmailDetails EmailDetails, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, struct FLatentActionInfo LatentInfo);
+	static void SendEmailV3(UObject* WorldContextObject, FEmailDetails EmailDetails, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, struct FLatentActionInfo LatentInfo);
 
 	/**
 	 *Send email using an email details object and specify a custom SMTP server 
@@ -68,7 +68,7 @@ public:
 	 *@param OutResult This is the email plugin result that you can check once the latent function is done. Was it successful or failed?
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Email Library | Send", meta = (Latent, WorldContext = "WorldContextObject", LatentInfo = "LatentInfo", DisplayName = "Send Email (Custom SMTP Server Email Details Object)"))
-	static void SendEmailV4(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, struct FLatentActionInfo LatentInfo);
+	static void SendEmailV4(UObject* WorldContextObject, UEmailDetailsObject* EmailDetailsObject, FString Username, FString ServerName, int32 Port, ECharSet CharacterSet, ESecurityType SecurityType, EEmailResult& OutResult, FString& OutError, struct FLatentActionInfo LatentInfo);
 
 	/**
 	 *Save Capture Component 2D to an image
@@ -93,8 +93,8 @@ public:
 	 *@param UsesHTML Should the email be formatted as an HTML page. If the option is on you will have to take care of the whole formatting yourself including breaking up the text into lines using <br>. To split a text into lines use the ConvertToArrayLines node.
 	 *@return Returns a reference to an Email Details Object that can be fed into the Send Email (Email Details Object) node
 	 */
-	UFUNCTION(BlueprintPure, Category = "Email Library | Utilities", meta = (HidePin = "SelectedUserInternal", AutoCreateRefTerm = "Attachments", AdvancedDisplay = 3))
-	static UEmailDetailsObject* MakeEmailDetailsFromAsset(FName SelectedUser, FString SelectedUserInternal, UEmailDetailsAsset* EmailDetailsAsset, FString ReceiverEmail, FString Subject, FString Message, TArray<FString> Attachments, bool bUsesHTML);
+	UFUNCTION(BlueprintPure, Category = "Email Library | Utilities", meta = (HidePin = "SelectedUserInternal", AutoCreateRefTerm = "Attachments, CC, BCC", AdvancedDisplay = 3))
+	static UEmailDetailsObject* MakeEmailDetailsFromAsset(FName SelectedUser, FString SelectedUserInternal, UEmailDetailsAsset* EmailDetailsAsset, FString ReceiverEmail, TArray<FString> CC, TArray<FString> BCC, FString Subject, FString Message, TArray<FString> Attachments, bool bUsesHTML);
 
 	/**
 	 *Get Users From Email Detail Asset
@@ -116,8 +116,8 @@ public:
 	 *@param EmailService The email service (SMTP server) that is used to send an email. If you are using a @gmail.com email this would be set to GMAIL
 	 *@param UsesHTML Should the email be formatted as an HTML page. If the option is on you will have to take care of the whole formatting yourself including breaking up the text into lines using <br>. To split a text into lines use the ConvertToArrayLines node.
 	 */
-	UFUNCTION(BlueprintPure, Category = "Email Library | Utilities", meta = (AutoCreateRefTerm = "Attachments", AdvancedDisplay = 2))
-	static UEmailDetailsObject* MakeEmailDetails(FString SenderEmail, FString Password, FString SenderName, FString ReceiverEmail, FString Subject, FString Message, TArray<FString> Attachments, EEmailType EmailService, bool bUsesHTML);
+	UFUNCTION(BlueprintPure, Category = "Email Library | Utilities", meta = (AutoCreateRefTerm = "Attachments, CC, BCC", AdvancedDisplay = 2))
+	static UEmailDetailsObject* MakeEmailDetails(FString SenderEmail, FString Password, FString SenderName, FString ReceiverEmail, TArray<FString> CC, TArray<FString> BCC, FString Subject, FString Message, TArray<FString> Attachments, EEmailType EmailService, bool bUsesHTML);
 	
 	/**
 	 *Constructs an HTML <img> tag which references an attachment. Optionally adds a number of <br> tags before and after the image.

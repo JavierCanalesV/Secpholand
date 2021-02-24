@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 0,
-	"VersionName": "1.4",
+	"VersionName": "1.5",
 	"FriendlyName": "EmailPlugin",
 	"Description": "The plugin adds the in-game functionality of sending emails.",
 	"Category": "Blueprints",
@@ -10,7 +10,7 @@
 	"DocsURL": "https://drive.google.com/file/d/1StVCNzHIb8fb_k5u1_u9sfoojTfbeMoz/view?usp=sharing",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/88f228c5ad9d4288b6426754c0b3f3d1",
 	"SupportURL": "https://discord.gg/Cdj58r7",
-	"EngineVersion": "4.23.0",
+	"EngineVersion": "4.26.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [

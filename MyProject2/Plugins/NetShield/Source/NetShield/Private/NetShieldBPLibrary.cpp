@@ -89,6 +89,13 @@ FString UNetShieldBPLibrary::Sha512Hash(FString Message)
 // Encrypts an FString using AES
 TArray<uint8> UNetShieldBPLibrary::AesEncrypt(EAESType Strength, FString Key, FString Iv, FString Message)
 {
+	// Initialize a "null" IV by default, and only override it if an IV is provided (NOTE: using the Null in a string can cause issues)
+	unsigned char IvBytes[32] = {0};
+	if (!Iv.IsEmpty())
+	{
+		// Copy over the passed in IV to the byte array
+		memcpy(IvBytes, (unsigned char*)FTCHARToUTF8((const TCHAR*)*Iv).Get(), FMath::Clamp(0, Iv.Len(), 32));
+	}
 	// Calculate the length of the AES string (blocks of 16 (AES's blocksize))
 	int encryptedLength = (strlen((char *)FTCHARToUTF8((const TCHAR*)*Message).Get()) / 16 + 1) * 16;
 
@@ -122,7 +129,7 @@ TArray<uint8> UNetShieldBPLibrary::AesEncrypt(EAESType Strength, FString Key, FS
 		}
 
 		// Attempt to initialize the EVP crypto function with 128 bit CBC AES
-		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Key).Get(), (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Iv).Get()))
+		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Key).Get(), IvBytes))
 			return TArray<uint8>();
 	}
 	else if (Strength == EAESType::AT_256)
@@ -135,7 +142,7 @@ TArray<uint8> UNetShieldBPLibrary::AesEncrypt(EAESType Strength, FString Key, FS
 		}
 
 		// Attempt to initialize the EVP crypto function with 256 bit CBC AES
-		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Key).Get(), (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Iv).Get()))
+		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, (const unsigned char*)FTCHARToUTF8((const TCHAR*)*Key).Get(), IvBytes))
 			return TArray<uint8>();
 	}
 	else
@@ -174,6 +181,13 @@ TArray<uint8> UNetShieldBPLibrary::AesEncrypt(EAESType Strength, FString Key, FS
 
 FString UNetShieldBPLibrary::AesDecrypt(EAESType Strength, FString Key, FString Iv, TArray<uint8> CipherText)
 {
+	// Initialize a "null" IV by default, and only override it if an IV is provided (NOTE: using the Null in a string can cause issues)
+	unsigned char IvBytes[32] = { 0 };
+	if (!Iv.IsEmpty())
+	{
+		// Copy over the passed in IV to the byte array
+		memcpy(IvBytes, (unsigned char*)FTCHARToUTF8((const TCHAR*)*Iv).Get(), FMath::Clamp(0, Iv.Len(), 32));
+	}
 
 	// Copy the ciphertext to the byte array (unsigned char *)
 	unsigned char *cipherText = (unsigned char *)malloc(CipherText.Num());
@@ -190,7 +204,7 @@ FString UNetShieldBPLibrary::AesDecrypt(EAESType Strength, FString Key, FString 
 	OPENSSL_config(NULL);
 
 	// Decrypt the ciphertext
-	plainTextLen = decrypt(Strength, cipherText, cipherTextLen, (unsigned char *)FTCHARToUTF8((const TCHAR*)*Key).Get(), (unsigned char *)FTCHARToUTF8((const TCHAR*)*Iv).Get(), plainText);
+	plainTextLen = decrypt(Strength, cipherText, cipherTextLen, (unsigned char *)FTCHARToUTF8((const TCHAR*)*Key).Get(), IvBytes, plainText);
 
 	// Null-terminate the decrypted buffer
 	plainText[plainTextLen] = '\0';
