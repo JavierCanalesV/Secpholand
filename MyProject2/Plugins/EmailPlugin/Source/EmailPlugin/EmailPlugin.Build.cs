@@ -80,7 +80,6 @@ public class EmailPlugin : ModuleRules
         if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.Win32)
         {
             PublicDefinitions.Add("_WINSOCK_DEPRECATED_NO_WARNINGS");
-            PublicAdditionalLibraries.Add("legacy_stdio_definitions.lib");
             PublicAdditionalLibraries.Add(ThirdPartyPath + "lib/Windows/CSmtp.lib");
         }
         else if (Target.Platform == UnrealTargetPlatform.Android)

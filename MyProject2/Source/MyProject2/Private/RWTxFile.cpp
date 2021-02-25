@@ -4,10 +4,10 @@
 
 bool URWTxFile::LoadTxt(FString FileNameA, FString& SaveTextA)
 {
-	return FFileHelper::LoadFileToString(SaveTextA, *(FPaths::GameDir() + FileNameA));
+	return FFileHelper::LoadFileToString(SaveTextA, *(FPaths::ProjectContentDir() + FileNameA));
 }
 
 bool URWTxFile::SaveTxt(FString SaveTextB, FString FileNameB)
 {
-	return FFileHelper::SaveStringToFile(SaveTextB, *(FPaths::GameDir() + FileNameB));
+	return FFileHelper::SaveStringToFile(SaveTextB, *(FPaths::ProjectContentDir() + FileNameB));
 }

@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0.11",
+	"VersionName": "1.0.12",
 	"FriendlyName": "NetShield",
 	"Description": "NetShield is an easy to use library that let's you use SSL/TLS, TCP sockets, AES, SHA and BASE64 using blueprints!",
 	"Category": "Networking",
@@ -10,7 +10,7 @@
 	"DocsURL": "https://docs.google.com/document/d/17lEAGL-sZmO5JXJU7_tqBOMr0_EtOeAe4RVjclNX2BA/edit?usp=sharing",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e5bfbbb0e56b45cdaa19c35a224e0483",
 	"SupportURL": "https://docs.google.com/document/d/17lEAGL-sZmO5JXJU7_tqBOMr0_EtOeAe4RVjclNX2BA/edit#heading=h.sjhz25umfob8",
-	"EngineVersion": "4.23.0",
+	"EngineVersion": "4.26.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [

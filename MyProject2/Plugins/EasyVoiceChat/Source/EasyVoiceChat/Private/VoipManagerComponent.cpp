@@ -1,11 +1,11 @@
 // Copyright 2019 313 Studios. All Rights Reserved.
 
-
 #include "VoipManagerComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "GameFramework/PlayerState.h"
 #include "Voice/Public/VoiceModule.h"
 #include "Voice/Public/Interfaces/VoiceCodec.h"
+#include "Engine/Player.h"
 
 #define MAX_VOICE_REMAINDER_SIZE 1 * 1024
 
@@ -121,9 +121,11 @@ void UVoipManagerComponent::TickComponent(float DeltaTime, ELevelTick TickType, 
 		OutCompressedVoiceBuffer.AddUninitialized(CompressedBytesAvailable);
 		FMemory::Memcpy(OutCompressedVoiceBuffer.GetData(), CompressedVoiceBuffer.GetData(), CompressedBytesAvailable);
 
-		VoiceGenerated.Broadcast(OutCompressedVoiceBuffer);
+		const float MicLevel = VoiceCapture.Get()->GetCurrentAmplitude();
 
-		OnVoiceGeneratedBP(OutCompressedVoiceBuffer);
+		VoiceGenerated.Broadcast(OutCompressedVoiceBuffer, MicLevel);
+
+		OnVoiceGeneratedBP(OutCompressedVoiceBuffer, MicLevel);
 	}
 }
 
@@ -140,10 +142,22 @@ bool UVoipManagerComponent::InitVoice(AController* Controller)
 			return false;
 		}
 
+		if (Controller->GetNetOwningPlayer())
+		{
+			Controller->GetNetOwningPlayer()->ConsoleCommand("voice.playback.ShouldResync 0");
+
+			if (bAutoSetConsoleVariables)
+			{
+				Controller->GetNetOwningPlayer()->ConsoleCommand("voice.SilenceDetectionThreshold " + FString::SanitizeFloat(SilenceDetectionThreshold));
+				Controller->GetNetOwningPlayer()->ConsoleCommand("voice.MicNoiseGateThreshold " + FString::SanitizeFloat(NoiseGateThreshold));
+				Controller->GetNetOwningPlayer()->ConsoleCommand("voice.JitterBufferDelay " + FString::SanitizeFloat(VoiceBufferDelay));
+			}
+		}
+
 		// Only create voice capture on local clients
 		if (VoiceModule.IsVoiceEnabled() && Controller->IsLocalController())
 		{
-			VoiceCapture = FVoiceModule::Get().CreateVoiceCapture();
+			VoiceCapture = FVoiceModule::Get().CreateVoiceCapture(FString(), UVOIPStatics::GetVoiceSampleRate(), UVOIPStatics::GetVoiceNumChannels());
 			VoiceEncoder = FVoiceModule::Get().CreateVoiceEncoder();
 			VoiceDecoder = FVoiceModule::Get().CreateVoiceDecoder();
 

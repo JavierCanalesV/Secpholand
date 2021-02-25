@@ -15,12 +15,14 @@ public:
 	UEmailDetailsObject() {}
 
 	FORCEINLINE
-	void Init(FString InSenderEmail, FString InPassword, FString InSenderName, FString InReceiverEmail, FString InSubject, FString InMessage, TArray<FString> InAttachments, EEmailType InEmailService, bool InUsesHTML)
+	void Init(FString InSenderEmail, FString InPassword, FString InSenderName, FString InReceiverEmail, TArray<FString> InCC, TArray<FString> InBCC, FString InSubject, FString InMessage, TArray<FString> InAttachments, EEmailType InEmailService, bool InUsesHTML)
 	{
 		this->SenderEmail = InSenderEmail;
 		this->Password = InPassword;
 		this->SenderName = InSenderName;
 		this->ReceiverEmail = InReceiverEmail;
+		this->CC = InCC;
+		this->BCC = InBCC;
 		this->Subject = InSubject;
 		this->Message = InMessage;
 		this->Attachments = InAttachments;
@@ -36,6 +38,10 @@ public:
 	FString SenderName;
 	UPROPERTY()
 	FString ReceiverEmail;
+	UPROPERTY()
+	TArray<FString> CC;
+	UPROPERTY()
+	TArray<FString> BCC;
 	UPROPERTY()
 	FString Subject;
 	UPROPERTY()

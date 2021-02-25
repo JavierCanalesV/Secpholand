@@ -10,23 +10,12 @@
 	"DocsURL": "",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/59f434efddeb4c93b27c8e05719664f1",
 	"SupportURL": "",
-	"EngineVersion": "4.23.0",
+	"EngineVersion": "4.26.0",
 	"CanContainContent": false,
 	"Installed": true,
 	"Modules": [
 		{
 			"Name": "DirectExcel",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"WhitelistPlatforms": [
-				"Win64",
-				"Android",
-				"Mac",
-				"IOS"
-			]
-		},
-		{
-			"Name": "XlntLib",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"WhitelistPlatforms": [

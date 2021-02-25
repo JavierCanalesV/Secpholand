@@ -30,12 +30,13 @@ void UVoipAudioComponent::TickComponent(float DeltaTime, ELevelTick TickType, FA
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (IsIdling() && bIsActive)
+	if (IsIdling() && IsActive())
 	{
 		// Stop when we're idle to free up for other streaming audio sources
 		// this tells the synth to stop on the render thread, must use bVoiceGenerating to make sure it has stopped
 		Stop();
-		bIsActive = false;
+		
+		SetActive(false);
 		UncompressedVoiceData.Empty();
 	}
 	
@@ -49,7 +50,7 @@ void UVoipAudioComponent::PlayVoiceData(const TArray<uint8>& CompressedVoiceData
 		return;
 	}
 
-	if (!IsPlaying() || !bIsActive)
+	if (!IsPlaying() || !IsActive())
 	{
 		if (bVoiceGenerating)
 		{

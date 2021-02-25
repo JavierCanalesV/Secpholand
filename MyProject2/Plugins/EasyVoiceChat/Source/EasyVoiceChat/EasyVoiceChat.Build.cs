@@ -30,7 +30,8 @@ public class EasyVoiceChat : ModuleRules
 				"Engine",
 				"Voice",
 				"OnlineSubsystemUtils",
-				"AudioMixer"
+				"AudioMixer",
+				"SignalProcessing"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

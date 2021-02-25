@@ -6,7 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "VoipManagerComponent.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FVoiceGenerated, const TArray<uint8>&, VoiceData);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FVoiceGenerated, const TArray<uint8>&, VoiceData, const float, MicLevel);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerStartTalking);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPlayerStopTalking);
 
@@ -35,7 +35,7 @@ public:
 
 	/* Called when voice data is generated, passes an array of compressed voice data to blueprints. Use on inherited components */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Voip Manager")
-		void OnVoiceGeneratedBP(const TArray<uint8> &VoiceBuffer);
+		void OnVoiceGeneratedBP(const TArray<uint8> &VoiceBuffer, const float MicLevel);
 
 	/* Called on the client when the player starts talking */
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCosmetic, Category = "Voip Manager")
@@ -88,8 +88,26 @@ private:
 
 	/* The threshold in which Stop Talking event will be called after transmission to compensate for buffering */
 	UPROPERTY(EditDefaultsOnly, Category="VOIP")
-		float StopTalkingThreshold = 0.2f;
+		float StopTalkingThreshold = 1.0f;
+
+	/* Whether to automatically set the below console variables. Disable if you want to change these variables globally, instead of per component */
+	UPROPERTY(EditDefaultsOnly, Category = "VOIP")
+		bool bAutoSetConsoleVariables = true;
 	
+	/* Transmits silence when below this threshold. When set to the same value as Noise Gate Threshold it has no effect */
+	UPROPERTY(EditDefaultsOnly, Category = "VOIP", meta = (ClampMin = 0, ClampMax = 1))
+		float SilenceDetectionThreshold = 0.01f;
+
+	/* Stops transmitting audio when it falls below this value. Decrease if the voice cuts in and out */
+	UPROPERTY(EditDefaultsOnly, Category = "VOIP", meta = (ClampMin = 0, ClampMax = 1))
+		float NoiseGateThreshold = 0.01f;
+
+	/* The amount of time that the voice playback components have to buffer the audio being played back
+	Decrease if you want to reduce latency 
+	Increase if you experience underruns (audio stuttering or cutting out prematurely) */
+	UPROPERTY(EditDefaultsOnly, Category = "VOIP")
+		float VoiceBufferDelay = 0.5f;
+
 	/* Set to true whenever the player is talking */
 	bool bVoiceActive;
 };

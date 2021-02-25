@@ -108,7 +108,7 @@ public:
 			const int32 Width = SceneCaptureComponent2D->TextureTarget->SizeX;
 			const int32 Height = SceneCaptureComponent2D->TextureTarget->SizeY;
 
-#if ENGINE_MAJOR_VERSION >= 4 && ENGINE_MINOR_VERSION < 25
+#if ENGINE_MAJOR_VERSION >= 4 && ENGINE_MINOR_VERSION != 25
 			NodeDescription = "Reversing image";
 			if(UGameplayStatics::GetPlatformName() == TEXT("Android"))
 				RawPixels = ReverseImage(RawPixels, Width, Height);
