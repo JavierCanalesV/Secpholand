@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{287271A8-49CD-C9BB-2F78-4ABF5A7B2457}",
+	"EngineAssociation": "4.26",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -63,6 +63,11 @@
 		{
 			"Name": "SoundUtilities",
 			"Enabled": true
+		},
+		{
+			"Name": "SystemMicControl",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8e49faf0b0e947fcbf8839f2dfe1d4db"
 		}
 	],
 	"TargetPlatforms": [
