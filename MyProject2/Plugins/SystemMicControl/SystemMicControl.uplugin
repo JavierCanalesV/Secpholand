@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "SystemMicControl",
+	"Description": "Control microphone device in the system",
+	"Category": "Audio",
+	"CreatedBy": "Andrew Bindraw",
+	"CreatedByURL": "https://github.com/mrbindraw",
+	"DocsURL": "https://docs.google.com/document/d/1f4oxyx62nUqJlzRWh1GH82JP05CQSrbp1fiLGXZs4zA/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8e49faf0b0e947fcbf8839f2dfe1d4db",
+	"SupportURL": "mailto:mrbindraw@gmail.com",
+	"EngineVersion": "4.26.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "SystemMicControl",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}
