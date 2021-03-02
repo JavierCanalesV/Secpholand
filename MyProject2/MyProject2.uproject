@@ -71,7 +71,7 @@
 		},
 		{
 			"Name": "UTubeVideoPlayer",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/06d7b19ec1e14e89a2c11902eebc8a67"
 		}
 	],
