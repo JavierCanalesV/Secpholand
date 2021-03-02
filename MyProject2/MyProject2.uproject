@@ -68,6 +68,11 @@
 			"Name": "SystemMicControl",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8e49faf0b0e947fcbf8839f2dfe1d4db"
+		},
+		{
+			"Name": "UTubeVideoPlayer",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/06d7b19ec1e14e89a2c11902eebc8a67"
 		}
 	],
 	"TargetPlatforms": [
