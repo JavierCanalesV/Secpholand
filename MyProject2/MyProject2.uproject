@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.26",
+	"EngineAssociation": "{287271A8-49CD-C9BB-2F78-4ABF5A7B2457}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -71,7 +71,7 @@
 		},
 		{
 			"Name": "UTubeVideoPlayer",
-			"Enabled": false,
+			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/06d7b19ec1e14e89a2c11902eebc8a67"
 		}
 	],
