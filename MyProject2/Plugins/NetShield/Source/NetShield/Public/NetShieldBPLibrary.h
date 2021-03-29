@@ -31,11 +31,18 @@ class UNetShieldBPLibrary : public UBlueprintFunctionLibrary
 
 	// AES Cryptography
 	// AES Encrypt - NOTE: This function is resource intensive, and may cause your thread to hang for a breef bit depending on your hardware. Use in a separate thread and/or with caution.
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Encrypt", Keywords = "NetShield AES CBC Encrypt"), Category = "NetShield|AES")
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Encrypt (StringKey)", Keywords = "NetShield AES CBC Encrypt"), Category = "NetShield|AES")
 		static TArray<uint8> AesEncrypt(EAESType Strength, FString Key, FString Iv, FString Message);
 	// AES Decrypt - NOTE: This function is resource intensive, and may cause your thread to hang for a breef bit depending on your hardware. Use in a separate thread and/or with caution.
-	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Decrypt", Keywords = "NetShield AES CBC Decrypt"), Category = "NetShield|AES")
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Decrypt (StringKey)", Keywords = "NetShield AES CBC Decrypt"), Category = "NetShield|AES")
 		static FString AesDecrypt(EAESType Strength, FString Key, FString Iv, TArray<uint8> CipherText);
+
+	// AES Encrypt - NOTE: This function is resource intensive, and may cause your thread to hang for a breef bit depending on your hardware. Use in a separate thread and/or with caution.
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Encrypt (Bytes)", Keywords = "NetShield AES CBC Encrypt"), Category = "NetShield|AES")
+		static TArray<uint8> AesEncryptBytes(EAESType Strength, TArray<uint8> Key, TArray<uint8> Iv, TArray<uint8> Message);
+	// AES Decrypt - NOTE: This function is resource intensive, and may cause your thread to hang for a breef bit depending on your hardware. Use in a separate thread and/or with caution.
+	UFUNCTION(BlueprintCallable, meta = (DisplayName = "Aes CBC Decrypt (Bytes)", Keywords = "NetShield AES CBC Decrypt"), Category = "NetShield|AES")
+		static TArray<uint8> AesDecryptBytes(EAESType Strength, TArray<uint8> Key, TArray<uint8> Iv, TArray<uint8> CipherText);
 
 	// BASE64
 	// Base64 Encode
@@ -47,11 +54,20 @@ class UNetShieldBPLibrary : public UBlueprintFunctionLibrary
 
 	// Translation
 	// FString -> Byte Array Translation
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "String To Bytes", Keywords = "NetShield Bytes String"), Category = "NetShield|Base64")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "String To Bytes", Keywords = "NetShield Bytes String"), Category = "NetShield|Utils")
 		static TArray<uint8> StringToBytes(FString String);
 	// Byte Array -> FString Translation
-	UFUNCTION(BlueprintPure, meta = (DisplayName = "Bytes To String", Keywords = "NetShield Bytes String"), Category = "NetShield|Base64")
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Bytes To String", Keywords = "NetShield Bytes String"), Category = "NetShield|Utils")
 		static FString BytesToString(TArray<uint8> bytes);
+
+	// FString containing HEX -> Bytes that hex represents
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Decode Hexadecimal String To Bytes", Keywords = "NetShield Bytes String hex decode"), Category = "NetShield|Utils")
+		static TArray<uint8> HexToBytes(FString HexString);
+
+	// Bytes -> a string containing the hexadecimal representation of it
+	UFUNCTION(BlueprintPure, meta = (DisplayName = "Encode Bytes To Hexadecimal String", Keywords = "NetShield Bytes String hex encode"), Category = "NetShield|Utils")
+		static FString BytesToHex(TArray<uint8> bytes);
+
 
 	// Managed Socket Requests.
 	// Managed socket close request
