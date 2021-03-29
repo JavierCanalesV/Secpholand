@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0.12",
+	"VersionName": "1.0.13",
 	"FriendlyName": "NetShield",
 	"Description": "NetShield is an easy to use library that let's you use SSL/TLS, TCP sockets, AES, SHA and BASE64 using blueprints!",
 	"Category": "Networking",

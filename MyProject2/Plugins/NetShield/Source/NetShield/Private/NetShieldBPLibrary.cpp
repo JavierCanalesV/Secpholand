@@ -213,6 +213,133 @@ FString UNetShieldBPLibrary::AesDecrypt(EAESType Strength, FString Key, FString 
 	return FString(UTF8_TO_TCHAR((char *)plainText));
 }
 
+TArray<uint8> UNetShieldBPLibrary::AesEncryptBytes(EAESType Strength, TArray<uint8> Key, TArray<uint8> Iv, TArray<uint8> Message)
+{
+	// Initialize a "null" IV by default, and only override it if an IV is provided (NOTE: using the Null in a string can cause issues)
+	unsigned char IvBytes[32] = {0};
+	if (Iv.Num() != 0)
+	{
+		// Copy over the passed in IV to the byte array
+		memcpy(IvBytes, (unsigned char*)Iv.GetData(), FMath::Clamp(0, Iv.Num(), 32));
+	}
+	// Calculate the length of the AES string (blocks of 16 (AES's blocksize))
+	int encryptedLength = (Message.Num() / 16 + 1) * 16;
+
+	// Create a buffer to store the ciphertext
+	unsigned char *cipherText = (unsigned char *)malloc(encryptedLength);
+	int cipherTextLen;
+
+	// Setup the crypto library
+	ERR_load_crypto_strings();
+	OpenSSL_add_all_algorithms();
+	OPENSSL_config(NULL);
+
+	// Create the cipher context
+	EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
+
+	// Intermediate variable to store the length of the ciphertext
+	int len;
+
+	// Check if the cipher context was invalid
+	if (!ctx)
+		return TArray<uint8>();
+
+	// Attempt to initialize the cipher suite with AES 128 or AES 256
+	if (Strength == EAESType::AT_128)
+	{
+		// Check if they keys length is 128 bits
+		if (Key.Num() * 8 != 128)
+		{
+			UE_LOG(LogNetShield, Error, TEXT("Your key needs to be 128 bits (16 characters) long for AES-128!"))
+			return TArray<uint8>();
+		}
+
+		// Attempt to initialize the EVP crypto function with 128 bit CBC AES
+		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, Key.GetData(), IvBytes))
+			return TArray<uint8>();
+	}
+	else if (Strength == EAESType::AT_256)
+	{
+		// Check if they keys length is 256 bits
+		if (Key.Num() * 8 != 256)
+		{
+			UE_LOG(LogNetShield, Error, TEXT("Your key needs to be 256 bits (32 characters) long for AES-256!"))
+			return TArray<uint8>();
+		}
+
+		// Attempt to initialize the EVP crypto function with 256 bit CBC AES
+		if (1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, Key.GetData(), IvBytes))
+			return TArray<uint8>();
+	}
+	else
+	{
+		// Somehow an extra enum got added that we wheren't able to handle!
+		UE_LOG(LogNetShield, Error, TEXT("AES Encrypt doesn't support this key length!"))
+		return TArray<uint8>();
+	}
+
+	// Encrypt the plaintext into cipherText
+	if (1 != EVP_EncryptUpdate(ctx, cipherText, &len, Message.GetData(), Message.Num()))
+		return TArray<uint8>();
+
+	cipherTextLen = len;
+
+	// Finalize the encryption
+	if (1 != EVP_EncryptFinal_ex(ctx, cipherText + len, &len))
+		return TArray<uint8>();
+
+	cipherTextLen += len;
+
+	/* Clean up */
+	EVP_CIPHER_CTX_free(ctx);
+
+	// Convert the ciphertext into an array of BYTEs
+	TArray<uint8> byteArray;
+	for (int i = 0; i < encryptedLength; i++)
+		byteArray.Add((uint8)cipherText[i]);
+
+	free(cipherText);
+
+	// Cleanup/free the crypto library
+	EVP_cleanup();
+	ERR_free_strings();
+
+	return byteArray;
+}
+
+TArray<uint8> UNetShieldBPLibrary::AesDecryptBytes(EAESType Strength, TArray<uint8> Key, TArray<uint8> Iv, TArray<uint8> CipherText)
+{
+		// Initialize a "null" IV by default, and only override it if an IV is provided (NOTE: using the Null in a string can cause issues)
+	unsigned char IvBytes[32] = { 0 };
+	if (Iv.Num() != 0)
+	{
+		// Copy over the passed in IV to the byte array
+		memcpy(IvBytes, (unsigned char*)Iv.GetData(), FMath::Clamp(0, Iv.Num(), 32));
+	}
+
+	// Create a byte buffer for the decrypted text (and account for the worst case, no padding scenario to avoid a buffer overflow)
+	unsigned char *plainText = (unsigned char *)malloc(CipherText.Num());
+	int plainTextLen, cipherTextLen = CipherText.Num();
+
+	// Initialise the library
+	ERR_load_crypto_strings();
+	OpenSSL_add_all_algorithms();
+	OPENSSL_config(NULL);
+
+	// Decrypt the ciphertext
+	plainTextLen = decrypt(Strength, CipherText.GetData(), cipherTextLen, (unsigned char *)Key.GetData(), IvBytes, plainText);
+
+	// Turn the buffer into a TArray, free memory and return
+	// NOTE: AddUnitialized & MemCpy did not work resulted in memory issues -> hence this "old fashioned" and possibly less efficient approach.
+	TArray<uint8> BytesArray;
+	for (int i = 0; i < plainTextLen; i++)
+	{
+		BytesArray.Add(plainText[i]);
+	}
+	free(plainText);
+	return BytesArray;
+}
+
 // Turns a byte array into a base64 encoded FString
 FString UNetShieldBPLibrary::Base64Encode(TArray<uint8> byteArray)
 {
@@ -332,6 +459,28 @@ FString UNetShieldBPLibrary::BytesToString(TArray<uint8> bytes)
 		store.AppendChar((unsigned char)bytes[i]);
 
 	return store;
+}
+
+TArray<uint8> UNetShieldBPLibrary::HexToBytes(FString HexString)
+{
+	// Create a buffer to store the data
+	size_t bufferSize = HexString.Len() / 2;
+	uint8_t *buffer = (uint8_t*)malloc(bufferSize);
+	FString::ToHexBlob(HexString, buffer, bufferSize);
+
+	// Initialize a TArray using this raw data
+	TArray<uint8> BytesArray;
+	BytesArray.AddUninitialized(bufferSize);
+	FMemory::Memcpy(BytesArray.GetData(), buffer, bufferSize);
+
+	// Release memory & return
+	free(buffer);
+	return BytesArray;
+}
+
+FString UNetShieldBPLibrary::BytesToHex(TArray<uint8> bytes)
+{
+	return FString::FromHexBlob(bytes.GetData(), bytes.Num());
 }
 
 void UNetShieldBPLibrary::RequestManagedClose(UManagedSocket *Socket)
